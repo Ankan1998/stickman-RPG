@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Stickman RPG"
+run/main_scene="res://scenes/Battle.tscn"
+config/features=PackedStringArray("4.7", "C#", "Forward Plus")
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="StickmanRpg.Game"
+
+[rendering]
+
+; 0 = Nearest. Without this every sprite is bilinear-filtered into a blurry
+; smear when scaled up, which is the classic "why does my pixel art look bad"
+; problem. This one line is the whole fix.
+textures/canvas_textures/default_texture_filter=0

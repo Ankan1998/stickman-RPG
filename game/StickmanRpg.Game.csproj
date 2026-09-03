@@ -1,0 +1,29 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+
+  <!--
+    IF GODOT COMPLAINS ABOUT AN SDK VERSION MISMATCH, THIS IS THE FILE.
+    The number in Sdk="Godot.NET.Sdk/x.y.z" above must match your installed
+    Godot version. Change that one number and rebuild - nothing else.
+
+    (Alternatively, delete this file and use Godot's
+     Project > Tools > C# > Create C# solution, then re-add the ProjectReference
+     below by hand. Editing the number is easier.)
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <RootNamespace>StickmanRpg.Game</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      The whole architecture, in one line: the GAME depends on the RULES,
+      and the rules do not depend on the game. Never add a reference pointing
+      the other way - Rpg.Core must stay runnable without Godot.
+    -->
+    <ProjectReference Include="..\src\Rpg.Core\Rpg.Core.csproj" />
+  </ItemGroup>
+
+</Project>

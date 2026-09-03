@@ -45,23 +45,23 @@ Start there if your goal is **to learn game development**.
 The numbered docs below explain *this project*, and are meant to be read in
 order. Start here if your goal is **to work on this code**.
 
-| # | Document | What it gives you |
-|---|---|---|
-| ▶ | [**How to play**](docs/how-to-play.md) | What the screen shows, what the buttons do, and how to actually win. Read this first. |
-| 0 | [**How to run**](docs/00-how-to-run.md) | Every command, the development loop, and troubleshooting. |
-| 1 | [Getting started](docs/01-getting-started.md) | A gentler walkthrough of installing and first launch. ~15 minutes. |
-| 2 | [C# crash course](docs/02-csharp-crash-course.md) | Every piece of C# syntax used in this repo, explained, with the real line it comes from. |
-| 3 | [Godot crash course](docs/03-godot-crash-course.md) | What a "node" and a "scene" are, and the five Godot ideas this project actually uses. |
-| 4 | [How it all fits together](docs/04-architecture.md) | The one big design idea, in plain English, and why it matters. |
-| 5 | [Code tour](docs/05-code-tour.md) | Every file, one at a time, what it does and why it exists. |
-| 6 | [Anatomy of a turn](docs/06-anatomy-of-a-turn.md) | One single turn traced from button click to pixels. The most useful page here. |
-| 7 | [Recipes](docs/07-recipes.md) | "How do I add a skill / a monster / a status effect?" Copy-paste answers. |
-| 8 | [Glossary](docs/08-glossary.md) | Every jargon word, defined. |
-| 9 | [Art pipeline](docs/09-art-pipeline.md) | How the original placeholder art was generated from Python. |
-| 10 | [Campaign plan](docs/10-campaign-implementation-plan.md) | The design and build plan for the dungeons, hub, loot, animation and audio. |
-| 11 | [**Positioning**](docs/11-positioning.md) | Ranks, reach, and why your sword cannot hit their shaman. |
-| 12 | [Roadmap](docs/roadmap.md) | What to build next, in what order. |
-| ★ | [**Game dev course**](docs/gamedev/README.md) | Seventeen chapters teaching game development itself, worked through this codebase. |
+| #  | Document                                                | What it gives you                                                                        |
+| -- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| ▶ | [**How to play**](docs/how-to-play.md)             | What the screen shows, what the buttons do, and how to actually win. Read this first.    |
+| 0  | [**How to run**](docs/00-how-to-run.md)            | Every command, the development loop, and troubleshooting.                                |
+| 1  | [Getting started](docs/01-getting-started.md)            | A gentler walkthrough of installing and first launch. ~15 minutes.                       |
+| 2  | [C# crash course](docs/02-csharp-crash-course.md)        | Every piece of C# syntax used in this repo, explained, with the real line it comes from. |
+| 3  | [Godot crash course](docs/03-godot-crash-course.md)      | What a "node" and a "scene" are, and the five Godot ideas this project actually uses.    |
+| 4  | [How it all fits together](docs/04-architecture.md)      | The one big design idea, in plain English, and why it matters.                           |
+| 5  | [Code tour](docs/05-code-tour.md)                        | Every file, one at a time, what it does and why it exists.                               |
+| 6  | [Anatomy of a turn](docs/06-anatomy-of-a-turn.md)        | One single turn traced from button click to pixels. The most useful page here.           |
+| 7  | [Recipes](docs/07-recipes.md)                            | "How do I add a skill / a monster / a status effect?" Copy-paste answers.                |
+| 8  | [Glossary](docs/08-glossary.md)                          | Every jargon word, defined.                                                              |
+| 9  | [Art pipeline](docs/09-art-pipeline.md)                  | How the original placeholder art was generated from Python.                              |
+| 10 | [Campaign plan](docs/10-campaign-implementation-plan.md) | The design and build plan for the dungeons, hub, loot, animation and audio.              |
+| 11 | [**Positioning**](docs/11-positioning.md)          | Ranks, reach, and why your sword cannot hit their shaman.                                |
+| 12 | [Roadmap](docs/roadmap.md)                               | What to build next, in what order.                                                       |
+| ★ | [**Game dev course**](docs/gamedev/README.md)      | Seventeen chapters teaching game development itself, worked through this codebase.       |
 
 **If you read only one thing after getting it running, read
 [Anatomy of a turn](docs/06-anatomy-of-a-turn.md).** Everything else makes sense
@@ -144,13 +144,13 @@ In VS Code you can also press **Ctrl+Shift+P → Tasks: Run Task** and pick
 <details>
 <summary>What is installed, and setting this up elsewhere</summary>
 
-| Software | Version |
-|---|---|
-| .NET SDK | 8.0.424 |
-| Godot (.NET/Mono build) | 4.7.2 |
-| Git | 2.54.0 |
-| VS Code | 1.135.0 |
-| VS Code extensions | C#, C# Dev Kit, Godot Tools |
+| Software                | Version                     |
+| ----------------------- | --------------------------- |
+| .NET SDK                | 8.0.424                     |
+| Godot (.NET/Mono build) | 4.7.2                       |
+| Git                     | 2.54.0                      |
+| VS Code                 | 1.135.0                     |
+| VS Code extensions      | C#, C# Dev Kit, Godot Tools |
 
 On another machine you need two free downloads —
 [.NET SDK 8](https://dotnet.microsoft.com/download) and
@@ -214,3 +214,5 @@ a number *measured over 250 simulated campaigns*, not guessed. See
 The fight is already over before the first animation plays. The screen is just
 replaying a recording. This sounds odd at first and is the reason the whole thing
 is testable — [the full explanation is here](docs/04-architecture.md).
+
+WEBSITE: [ankan1998.github.io/stickman-RPG](https://ankan1998.github.io/stickman-RPG/)

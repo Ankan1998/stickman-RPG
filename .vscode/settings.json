@@ -1,0 +1,62 @@
+{
+  // ==========================================================================
+  //  GODOT TOOLS
+  // ==========================================================================
+
+  // WHERE GODOT IS.
+  //
+  // This setting defaults to the bare word "godot", which VS Code resolves
+  // RELATIVE TO THIS FOLDER - producing the error:
+  //     'editorPath.godot4' value of '...\stickman-RPG\godot' is not a valid
+  //     Godot executable
+  // It needs a real path to the .exe. (A .cmd shim will not do: the extension
+  // launches the process directly rather than through a shell.)
+  //
+  // ${env:LOCALAPPDATA} is used instead of C:\Users\<you> so this line contains
+  // no username. If you upgrade Godot, update the two version numbers below.
+  "godotTools.editorPath.godot4": "${env:LOCALAPPDATA}\\Microsoft\\WinGet\\Packages\\GodotEngine.GodotEngine.Mono_Microsoft.Winget.Source_8wekyb3d8bbwe\\Godot_v4.7.2-stable_mono_win64\\Godot_v4.7.2-stable_mono_win64.exe",
+
+  // DO NOT CHASE THE GDSCRIPT LANGUAGE SERVER.
+  //
+  // Godot Tools tries to connect to Godot's built-in GDScript language server on
+  // port 6008, which only exists while the Godot editor is running. That causes:
+  //     Couldn't connect to the GDScript language server at 127.0.0.1:6008
+  //
+  // This project is written in C#, not GDScript, so that server is of no use to
+  // us and the warning is pure noise. Turning off auto-reconnect silences it.
+  // Everything else Godot Tools does (.tscn support, launching the editor) is
+  // unaffected.
+  //
+  // If you ever DO write GDScript, set this back to true and open the Godot
+  // editor - or set "godotTools.lsp.headless": true to have it start its own.
+  "godotTools.lsp.autoReconnect.enabled": false,
+
+  // ==========================================================================
+  //  C#
+  // ==========================================================================
+
+  // Tell C# Dev Kit which solution to load, so it never has to guess.
+  "dotnet.defaultSolution": "StickmanRpg.sln",
+
+  // ==========================================================================
+  //  Keeping the file tree readable
+  // ==========================================================================
+
+  // Build output and Godot's import cache are all generated and git-ignored.
+  // Hiding them makes the Explorer show only files you actually edit.
+  "files.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+    "game/.godot": true
+  },
+
+  // ...but still let Ctrl+P and search ignore them too.
+  "search.exclude": {
+    "**/bin": true,
+    "**/obj": true,
+    "game/.godot": true
+  },
+
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

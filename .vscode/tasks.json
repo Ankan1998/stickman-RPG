@@ -1,0 +1,54 @@
+{
+  // VS Code tasks. Run any of these with:  Ctrl+Shift+P -> "Tasks: Run Task"
+  // The one marked as the default build task also runs with Ctrl+Shift+B.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "detail": "Compile everything: the rules engine, the tests, and the Godot game.",
+      "type": "shell",
+      "command": "dotnet",
+      "args": ["build", "${workspaceFolder}/StickmanRpg.sln"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "test",
+      "detail": "Run all 21 tests. Takes about a second. Needs no Godot.",
+      "type": "shell",
+      "command": "dotnet",
+      "args": ["test", "${workspaceFolder}/src/Rpg.Core.Tests/Rpg.Core.Tests.csproj"],
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "test (show balance numbers)",
+      "detail": "Run the tests and print the 1000-battle balance harness output.",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "test",
+        "${workspaceFolder}/src/Rpg.Core.Tests/Rpg.Core.Tests.csproj",
+        "--logger",
+        "console;verbosity=detailed"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "play the game",
+      "detail": "Launch the game directly, without opening the Godot editor.",
+      "type": "shell",
+      "command": "godot",
+      "args": ["--path", "${workspaceFolder}/game"],
+      "problemMatcher": []
+    },
+    {
+      "label": "open Godot editor",
+      "detail": "Open this project in the Godot editor.",
+      "type": "shell",
+      "command": "godot",
+      "args": ["--editor", "--path", "${workspaceFolder}/game"],
+      "problemMatcher": []
+    }
+  ]
+}

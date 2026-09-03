@@ -1,0 +1,26 @@
+# ---- .NET ----
+bin/
+obj/
+*.user
+*.userprefs
+.vs/
+.idea/
+
+# ---- Godot 4 ----
+.godot/
+/game/.godot/
+export_presets.cfg
+*.translation
+
+# Godot may generate its own solution next to project.godot; we keep ours at the repo root.
+/game/*.sln
+
+# ---- OS ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- generated docs site ----
+site/
+site-docs/
+.venv-docs/

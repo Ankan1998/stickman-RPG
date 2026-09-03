@@ -1,6 +1,6 @@
 # 2. The game loop and time
 
-> **Where you are:** chapter 2 of 17 · [index](README.md) · previous: [What makes games different](01-what-makes-games-different.md) · next: [Engines and the scene tree](03-engines-and-the-scene-tree.md)
+> **Where you are:** chapter 2 of 20 · [index](README.md) · previous: [What makes games different](01-what-makes-games-different.md) · next: [Engines and the scene tree](03-engines-and-the-scene-tree.md)
 
 ---
 
@@ -33,6 +33,13 @@ physics, audio, asset loading, the editor — is scaffolding around this loop.
 
 **Read, update, draw. Forever.**
 
+```mermaid
+flowchart LR
+    I[Read input] --> U["Update the world<br/>(everything × delta)"]
+    U --> D[Draw the screen]
+    D -->|"next frame, ~16 ms later"| I
+```
+
 ### How fast?
 
 Fast enough to fool the eye. The conventional target is **60 frames per second**,
@@ -53,7 +60,7 @@ web request and is a visible hitch in a game.
 > **For this project it does not matter at all.** A turn-based RPG with a dozen
 > sprites uses a fraction of a percent of that budget. Do not optimise a game
 > like this one for frame time; you will be optimising something that was never
-> slow. [Chapter 16](16-testing-and-balancing.md) is about measuring the thing
+> slow. [Chapter 19](19-testing-and-balancing.md) is about measuring the thing
 > that *is* hard here, which is balance.
 
 ---
@@ -125,7 +132,7 @@ is what that means.
 **This project uses `_Process` only.** There is no physics, nothing collides,
 and nothing needs to be reproducible frame-by-frame — the reproducibility this
 project cares about lives in the *rules*, which do not run on a clock at all.
-That is chapter 7.
+That is chapter 8.
 
 ---
 
@@ -186,6 +193,28 @@ for (int i = 0; i < log.Count; i++)
 ```
 
 **All the waiting is on the presentation side.** The rules already finished.
+
+Here is one player turn, with both clocks on it:
+
+```mermaid
+sequenceDiagram
+    participant P as Player
+    participant V as BattleView<br/>(program clock)
+    participant B as Battle<br/>(rules clock)
+    P->>V: click "Slash → Goblin A"
+    V->>B: TakeTurn(action)
+    Note over B: resolves the WHOLE turn<br/>in microseconds
+    B-->>V: List<GameEvent>
+    loop each event
+        V->>V: animation, sound, effect
+        V->>V: await 0.30 s
+    end
+    V->>P: menu for the next hero
+```
+
+The rules clock ticks exactly once, at `TakeTurn`. Everything below the dashed
+arrow is the program clock spending real seconds acting out something that
+already happened.
 
 This is the concrete reason the balance harness can play 2,250 fights in a
 second: it simply never calls `PlayEvents`. It throws the list away.
@@ -306,7 +335,7 @@ private const double BeatSeconds = 0.30;
 
 Try `0.05` and `1.0`. Watch how strongly a single number changes whether the
 combat feels snappy or ponderous. Nothing about the *rules* changed at all —
-identical damage, identical outcome. This is [game feel](15-ui-and-game-feel.md)
+identical damage, identical outcome. This is [game feel](17-ui-and-game-feel.md)
 in its purest form.
 
 ---

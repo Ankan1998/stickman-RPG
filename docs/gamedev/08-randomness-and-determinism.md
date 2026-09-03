@@ -1,6 +1,6 @@
-# 7. Randomness and determinism
+# 8. Randomness and determinism
 
-> **Where you are:** chapter 7 of 17 · [index](README.md) · previous: [Events and replay](06-events-and-replay.md) · next: [Turns, actions and resolution](08-turns-actions-and-resolution.md)
+> **Where you are:** chapter 8 of 20 · [index](README.md) · previous: [Events and replay](07-events-and-replay.md) · next: [Turns, actions and resolution](09-turns-actions-and-resolution.md)
 
 ---
 
@@ -330,7 +330,7 @@ public void SameSeedSameBattle()
 ```
 
 It passes because events are records and compare by value
-([chapter 6](06-events-and-replay.md)).
+([chapter 7](07-events-and-replay.md)).
 
 **2. Break determinism on purpose.** In
 [`SkillAction.Execute`](../../src/Rpg.Core/Combat/SkillAction.cs), move the crit
@@ -346,4 +346,4 @@ list, months later, for an unrelated reason.
 
 ---
 
-**Next:** [Chapter 8 — Turns, actions and resolution](08-turns-actions-and-resolution.md)
+**Next:** [Chapter 9 — Turns, actions and resolution](09-turns-actions-and-resolution.md)

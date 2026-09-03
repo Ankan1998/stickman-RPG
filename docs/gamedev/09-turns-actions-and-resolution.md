@@ -1,6 +1,6 @@
-# 8. Turns, actions and resolution
+# 9. Turns, actions and resolution
 
-> **Where you are:** chapter 8 of 17 · [index](README.md) · previous: [Randomness and determinism](07-randomness-and-determinism.md) · next: [Numbers: damage and stat design](09-numbers-and-stat-design.md)
+> **Where you are:** chapter 9 of 20 · [index](README.md) · previous: [Randomness and determinism](08-randomness-and-determinism.md) · next: [Numbers: damage and stat design](10-numbers-and-stat-design.md)
 
 ---
 
@@ -110,7 +110,7 @@ Three details in there are worth stealing:
 - **The dead are re-checked in `MoveNext`**, not only when the round starts. Kill
   the goblin before its turn and it does not get one.
 - **`ThenBy(a => a.Id, StringComparer.Ordinal)`** — deterministic tie-breaks, for
-  the reasons in [chapter 7](07-randomness-and-determinism.md).
+  the reasons in [chapter 8](08-randomness-and-determinism.md).
 
 And note the upgrade path is *already open*, because turn order lives behind its
 own type:
@@ -243,6 +243,20 @@ public List<GameEvent> TakeTurn(IAction action)
 }
 ```
 
+```mermaid
+flowchart TB
+    G["guards: battle over? right actor?"] --> A{actor.CanAct?}
+    A -->|yes| X["action.Execute: events"]
+    A -->|no| S["TurnSkipped"]
+    X --> D1["ReportDeaths"]
+    S --> D1
+    D1 --> T["TickStatuses<br/>poison damage, countdowns"]
+    T --> D2["ReportDeaths<br/>(poison can kill)"]
+    D2 --> E{anyone left<br/>on both sides?}
+    E -->|no| End["BattleEnded"]
+    E -->|yes| N["AdvanceToNextTurn<br/>TickCooldowns, TurnStarted"]
+```
+
 ### The decisions hiding in that order
 
 **Statuses tick *after* acting.** So a 1-turn poison still gets to deal its
@@ -274,7 +288,7 @@ a reflected hit. If each of those logged its own death, you would eventually
 double-report one — and the screen would play the death animation twice.
 
 > That is worth pausing on. The *rules* were carefully built so a death is
-> announced once. The bug in [chapter 6](06-events-and-replay.md) was that the
+> announced once. The bug in [chapter 7](07-events-and-replay.md) was that the
 > *screen* found a second way to notice the same death. Both halves of the split
 > need this discipline, independently.
 
@@ -341,7 +355,7 @@ if (Skill.AppliesStatus is { } status && Target.IsAlive)
 ```
 
 They differ **only in the numbers on their definition**. That is
-[chapter 11](11-content-as-data.md), and it is the reason this game has 55 skills
+[chapter 12](12-content-as-data.md), and it is the reason this game has 55 skills
 instead of the 8 it would have if each needed a class.
 
 Three small decisions worth noticing:
@@ -352,7 +366,7 @@ Three small decisions worth noticing:
   baffling combat logs.
 - **Life-drain uses `applied`, not `damage`.** Draining a nearly-dead target
   heals very little, because overkill was already thrown away by `TakeDamage`
-  ([chapter 5](05-state-and-entities.md)).
+  ([chapter 6](06-state-and-entities.md)).
 
 > **The rule to internalise:** if you are about to write
 > `class FireballAction : IAction`, stop and ask whether the skill *definition*
@@ -396,4 +410,4 @@ status to yourself and costs a turn. You will find you only need to touch
 
 ---
 
-**Next:** [Chapter 9 — Numbers: damage and stat design](09-numbers-and-stat-design.md)
+**Next:** [Chapter 10 — Numbers: damage and stat design](10-numbers-and-stat-design.md)

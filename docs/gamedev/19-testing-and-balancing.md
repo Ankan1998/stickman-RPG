@@ -1,6 +1,6 @@
-# 16. Testing and balancing
+# 19. Testing and balancing
 
-> **Where you are:** chapter 16 of 17 · [index](README.md) · previous: [UI and game feel](15-ui-and-game-feel.md) · next: [Where to go next](17-where-to-go-next.md)
+> **Where you are:** chapter 19 of 20 · [index](README.md) · previous: [Debugging a game](18-debugging-a-game.md) · next: [Where to go next](20-where-to-go-next.md)
 
 ---
 
@@ -25,7 +25,7 @@ game's difficulty, and you get worse every day.*
 
 ## The idea: a balance harness
 
-If your rules do not need a screen ([chapter 4](04-rules-vs-presentation.md)),
+If your rules do not need a screen ([chapter 5](05-rules-vs-presentation.md)),
 you can play thousands of games in a test.
 
 ```csharp
@@ -84,7 +84,7 @@ being clear-eyed about.
 
 - It is **consistent** — it does not learn or get tired, so a difference between
   two runs is a difference in your *game*, not in your player.
-- It is **repeatable** — same seed, same run ([chapter 7](07-randomness-and-determinism.md)).
+- It is **repeatable** — same seed, same run ([chapter 8](08-randomness-and-determinism.md)).
 - It is **not a human.** It plays at roughly a competent-but-unimaginative level.
   It never panics and never finds a clever combo.
 
@@ -186,7 +186,7 @@ From the same session:
 
 Attack is a **wrecking ball**, not a dial — because defence subtracts, a point of
 Attack is worth several points of anything else
-([chapter 9](09-numbers-and-stat-design.md)). And a single extra body is never a
+([chapter 10](10-numbers-and-stat-design.md)). And a single extra body is never a
 small change, because action economy compounds every round.
 
 > **The lesson: learn the sensitivity of each of your knobs, by measuring.** Then
@@ -339,7 +339,7 @@ is now deadlier than the endgame.
 
 **2. Add a metric.** `RunStats` counts fourteen things. Add
 `TimesRepositioned` — a counter and one line in `Observe`
-([chapter 6](06-events-and-replay.md)) — then print it from the harness to see
+([chapter 7](07-events-and-replay.md)) — then print it from the harness to see
 how often the AI actually shuffles. You cannot break combat by doing this.
 
 **3. Find the real difficulty knob.** Change `BreatherPercent` in
@@ -351,4 +351,4 @@ in the game"*.
 
 ---
 
-**Next:** [Chapter 17 — Where to go next](17-where-to-go-next.md)
+**Next:** [Chapter 20 — Where to go next](20-where-to-go-next.md)

@@ -1,6 +1,6 @@
-# 9. Numbers: damage and stat design
+# 10. Numbers: damage and stat design
 
-> **Where you are:** chapter 9 of 17 · [index](README.md) · previous: [Turns, actions and resolution](08-turns-actions-and-resolution.md) · next: [Status effects and space](10-statuses-and-space.md)
+> **Where you are:** chapter 10 of 20 · [index](README.md) · previous: [Turns, actions and resolution](09-turns-actions-and-resolution.md) · next: [Status effects and space](11-statuses-and-space.md)
 
 ---
 
@@ -150,7 +150,7 @@ int raw = attacker.Attack * power / 100;      // 7/2 is 3, not 3.5
 
 Deliberate. Whole numbers are easier for a player to reason about, and they
 sidestep floating-point differences between platforms — which matters for
-[determinism](07-randomness-and-determinism.md).
+[determinism](08-randomness-and-determinism.md).
 
 Watch the ordering though: `attack * power / 100` and `attack * (power / 100)`
 are *not* the same in integer maths. The second one is almost always zero.
@@ -236,7 +236,7 @@ everything in turn-based combat. Three heroes against four monsters is not "33%
 harder". Every extra enemy turn is another attack, and it compounds every round.
 
 This is why "kill one enemy fast" beats "damage them all a bit", and it is the
-core tactical insight the AI is built around ([chapter 12](12-enemy-ai.md)).
+core tactical insight the AI is built around ([chapter 13](13-enemy-ai.md)).
 
 ---
 
@@ -379,4 +379,4 @@ how many battles now run to the 100-round draw limit.
 
 ---
 
-**Next:** [Chapter 10 — Status effects and space](10-statuses-and-space.md)
+**Next:** [Chapter 11 — Status effects and space](11-statuses-and-space.md)

@@ -1,32 +1,35 @@
-# 17. Where to go next
+# 20. Where to go next
 
-> **Where you are:** chapter 17 of 17 · [index](README.md) · previous: [Testing and balancing](16-testing-and-balancing.md)
+> **Where you are:** chapter 20 of 20 · [index](README.md) · previous: [Testing and balancing](19-testing-and-balancing.md)
 
 ---
 
 ## What you now know
 
-Sixteen chapters ago you had never written a game. Here is what you have picked
+Nineteen chapters ago you had never written a game. Here is what you have picked
 up, stated as things you can now *do*:
 
 | | You can now |
 |---|---|
 | 1 | Explain why game code is structured differently from the software you already write |
 | 2 | Write frame-rate-independent motion, and keep the rules clock separate from the program clock |
-| 3 | Navigate a scene tree, and know when a container will overrule you |
-| 4 | Separate rules from presentation, and enforce it with the build system |
-| 5 | Design entities that defend their own invariants, and derive state rather than cache it |
-| 6 | Build an event log you can replay, test, count and (later) serialise |
-| 7 | Make a game deterministic, including the tie-breaks nobody thinks about |
-| 8 | Choose a model of time, and implement turns with the Command pattern |
-| 9 | Choose a damage formula on purpose, and balance items with budgets |
-| 10 | Implement statuses and positioning, and avoid the dead ends they create |
-| 11 | Express content as data instead of a class hierarchy |
-| 12 | Write a utility AI, and tune it so it is interesting rather than merely optimal |
-| 13 | Animate sprites from atlases, and make pixel art look correct |
-| 14 | Build audio that does not sound cheap |
-| 15 | Build a UI that teaches, and add the juice that makes it feel good |
-| 16 | Measure your game instead of guessing about it |
+| 3 | Navigate a scene tree, read screen coordinates, and know when a container will overrule you |
+| 4 | Turn input into intents, wire nodes together with signals, and see the state machine your screens already form |
+| 5 | Separate rules from presentation, and enforce it with the build system |
+| 6 | Design entities that defend their own invariants, and derive state rather than cache it |
+| 7 | Build an event log you can replay, test, count and (later) serialise |
+| 8 | Make a game deterministic, including the tie-breaks nobody thinks about |
+| 9 | Choose a model of time, and implement turns with the Command pattern |
+| 10 | Choose a damage formula on purpose, and balance items with budgets |
+| 11 | Implement statuses and positioning, and avoid the dead ends they create |
+| 12 | Express content as data instead of a class hierarchy |
+| 13 | Write a utility AI, and tune it so it is interesting rather than merely optimal |
+| 14 | Design the loop *around* the fights: attrition, reset points, escalation and reward cadence |
+| 15 | Animate sprites from atlases, and make pixel art look correct |
+| 16 | Build audio that does not sound cheap |
+| 17 | Build a UI that teaches, and add the juice that makes it feel good |
+| 18 | Debug a game with seeds, event logs and diagnostic tests instead of breakpoints |
+| 19 | Measure your game instead of guessing about it |
 
 That is a genuine foundation. It is not everything — there is nothing here about
 3D, physics, shaders, networking, or platforms — but it is the part that
@@ -80,7 +83,7 @@ thirty levels.
 
 Now you meet the real problem: **content is the cost**. Twenty cards means twenty
 designs, twenty balance passes, twenty icons, twenty tooltips. You will
-understand [chapter 11](11-content-as-data.md) in your bones after this.
+understand [chapter 12](12-content-as-data.md) in your bones after this.
 
 ### 4. Then your RPG
 
@@ -98,7 +101,7 @@ If you want to keep learning here, the exercises are graded. The full plan is in
 |---|---|---|---|
 | 1 | Add a skill, a monster and a weapon | The content pipeline | ★ |
 | 2 | Fix the [regeneration bug](../07-recipes.md) — write the test first | Your first real engine change | ★★ |
-| 3 | Add a **speed toggle** and a skip-animation key | The pacing problem from [ch 15](15-ui-and-game-feel.md) | ★★ |
+| 3 | Add a **speed toggle** and a skip-animation key | The pacing problem from [ch 17](17-ui-and-game-feel.md) | ★★ |
 | 4 | Add **hit pause** on criticals | The best juice technique you have not tried | ★★ |
 | 5 | Add `TargetKind.AllEnemies` | Touches `TargetsFor` and `SkillAction` | ★★★ |
 | 6 | Move content to JSON | Data-driven content, hot reload | ★★★ |
@@ -148,7 +151,7 @@ This course showed you a heavily architected codebase. That architecture is the
 with `IActionResolutionStrategyFactory`, you will spend a month building a
 framework for a game you have not designed.
 
-Write it badly. Play it. *Then* apply chapter 4.
+Write it badly. Play it. *Then* apply chapter 5.
 
 ### 4. Not playing your own game
 
@@ -161,7 +164,7 @@ things no test can express.
 
 Placeholder art is fine for years. This project used stick figures drawn with
 `DrawLine` for its entire first version, and none of the mechanics knew or cared
-([chapter 4](04-rules-vs-presentation.md)). *Into the Breach* and *Slay the
+([chapter 5](05-rules-vs-presentation.md)). *Into the Breach* and *Slay the
 Spire* both have modest art and are both excellent.
 
 ### 6. Comparing your first game to shipped games
@@ -188,7 +191,7 @@ everything you admire. That is not a reason to stop; it is arithmetic.
   for "deep mechanics, modest art, small team". Both talk candidly about
   balancing and iteration.
 - **GDC talks on YouTube.** Search "juice it or lose it" for
-  [chapter 15](15-ui-and-game-feel.md) in twenty minutes, and "Into the Breach
+  [chapter 17](17-ui-and-game-feel.md) in twenty minutes, and "Into the Breach
   design" for a masterclass in removing randomness.
 
 **Communities:**
@@ -251,19 +254,22 @@ Do that, measure instead of guessing, ship something small, and you will be fine
 | 1 | [What makes games different](01-what-makes-games-different.md) |
 | 2 | [The game loop and time](02-the-game-loop-and-time.md) |
 | 3 | [Engines and the scene tree](03-engines-and-the-scene-tree.md) |
-| 4 | [Rules vs presentation](04-rules-vs-presentation.md) |
-| 5 | [State and entities](05-state-and-entities.md) |
-| 6 | [Events and replay](06-events-and-replay.md) |
-| 7 | [Randomness and determinism](07-randomness-and-determinism.md) |
-| 8 | [Turns, actions and resolution](08-turns-actions-and-resolution.md) |
-| 9 | [Numbers: damage and stat design](09-numbers-and-stat-design.md) |
-| 10 | [Status effects and space](10-statuses-and-space.md) |
-| 11 | [Content as data](11-content-as-data.md) |
-| 12 | [Enemy AI](12-enemy-ai.md) |
-| 13 | [Sprites and animation](13-sprites-and-animation.md) |
-| 14 | [Audio](14-audio.md) |
-| 15 | [UI and game feel](15-ui-and-game-feel.md) |
-| 16 | [Testing and balancing](16-testing-and-balancing.md) |
-| 17 | Where to go next |
+| 4 | [Input, signals and game flow](04-input-signals-and-game-flow.md) |
+| 5 | [Rules vs presentation](05-rules-vs-presentation.md) |
+| 6 | [State and entities](06-state-and-entities.md) |
+| 7 | [Events and replay](07-events-and-replay.md) |
+| 8 | [Randomness and determinism](08-randomness-and-determinism.md) |
+| 9 | [Turns, actions and resolution](09-turns-actions-and-resolution.md) |
+| 10 | [Numbers: damage and stat design](10-numbers-and-stat-design.md) |
+| 11 | [Status effects and space](11-statuses-and-space.md) |
+| 12 | [Content as data](12-content-as-data.md) |
+| 13 | [Enemy AI](13-enemy-ai.md) |
+| 14 | [Progression and the shape of a run](14-progression-and-the-shape-of-a-run.md) |
+| 15 | [Sprites and animation](15-sprites-and-animation.md) |
+| 16 | [Audio](16-audio.md) |
+| 17 | [UI and game feel](17-ui-and-game-feel.md) |
+| 18 | [Debugging a game](18-debugging-a-game.md) |
+| 19 | [Testing and balancing](19-testing-and-balancing.md) |
+| 20 | Where to go next |
 
 Now go and build something.

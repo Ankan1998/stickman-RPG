@@ -1,6 +1,6 @@
-# 14. Audio
+# 16. Audio
 
-> **Where you are:** chapter 14 of 17 · [index](README.md) · previous: [Sprites and animation](13-sprites-and-animation.md) · next: [UI and game feel](15-ui-and-game-feel.md)
+> **Where you are:** chapter 16 of 20 · [index](README.md) · previous: [Sprites and animation](15-sprites-and-animation.md) · next: [UI and game feel](17-ui-and-game-feel.md)
 
 ---
 
@@ -136,7 +136,7 @@ Three mapping functions cover every sound in the game. Notice:
 
 - **`HitSound` lives on the weapon definition**, so adding a weapon automatically
   gives it the right impact sound. Content-as-data
-  ([chapter 11](11-content-as-data.md)) paying off again.
+  ([chapter 12](12-content-as-data.md)) paying off again.
 - **`VoiceFamily` lives on the actor** — `human`, `goblin`, `undead`, `beast`,
   `demon`, `golem`, `slime`, `skeleton`. A skeleton dies with a clatter and a
   slime with a splat, and nobody wrote a `switch` at the call site.
@@ -224,7 +224,7 @@ Actor? attacker = _campaign.Battle.Current;      // whose turn is it?
 ```
 
 Which is always the **next** fighter, because the turn already advanced
-([chapter 6](06-events-and-replay.md)). So a goblin's club could land with a
+([chapter 7](07-events-and-replay.md)). So a goblin's club could land with a
 bowstring. The fix was to put the attacker in the event.
 
 ---
@@ -241,7 +241,7 @@ This is a deliberate philosophy and worth thinking about. Audio is
 **decoration**. A missing sound file should never take down a game.
 
 Contrast that with `BattleState`'s constructor from
-[chapter 5](05-state-and-entities.md), which explodes loudly on a duplicate actor
+[chapter 6](06-state-and-entities.md), which explodes loudly on a duplicate actor
 id. Both are correct:
 
 > **Crash loudly when the *rules* are wrong. Fail silently when the *decoration*
@@ -303,4 +303,4 @@ unmixed game sounds like.
 
 ---
 
-**Next:** [Chapter 15 — UI and game feel](15-ui-and-game-feel.md)
+**Next:** [Chapter 17 — UI and game feel](17-ui-and-game-feel.md)

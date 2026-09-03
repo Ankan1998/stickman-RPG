@@ -31,7 +31,7 @@ There are two ways in, and they suit different goals:
 
 ### 🎓 Learn game development, using this project as the worked example
 
-**→ [Game Development, From Zero](docs/gamedev/README.md)** — a seventeen-chapter
+**→ [Game Development, From Zero](docs/gamedev/README.md)** — a twenty-chapter
 course that teaches game development itself: the game loop, engines and scene
 trees, separating rules from presentation, event logs, determinism, turn systems,
 damage formulas, content-as-data, enemy AI, sprites, audio, UI, game feel and
@@ -61,7 +61,7 @@ order. Start here if your goal is **to work on this code**.
 | 10 | [Campaign plan](docs/10-campaign-implementation-plan.md) | The design and build plan for the dungeons, hub, loot, animation and audio.              |
 | 11 | [**Positioning**](docs/11-positioning.md)          | Ranks, reach, and why your sword cannot hit their shaman.                                |
 | 12 | [Roadmap](docs/roadmap.md)                               | What to build next, in what order.                                                       |
-| ★ | [**Game dev course**](docs/gamedev/README.md)      | Seventeen chapters teaching game development itself, worked through this codebase.       |
+| ★ | [**Game dev course**](docs/gamedev/README.md)      | Twenty chapters teaching game development itself, worked through this codebase.       |
 
 **If you read only one thing after getting it running, read
 [Anatomy of a turn](docs/06-anatomy-of-a-turn.md).** Everything else makes sense

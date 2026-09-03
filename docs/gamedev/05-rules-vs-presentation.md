@@ -1,6 +1,6 @@
-# 4. Rules vs presentation
+# 5. Rules vs presentation
 
-> **Where you are:** chapter 4 of 17 · [index](README.md) · previous: [Engines and the scene tree](03-engines-and-the-scene-tree.md) · next: [State and entities](05-state-and-entities.md)
+> **Where you are:** chapter 5 of 20 · [index](README.md) · previous: [Input, signals and game flow](04-input-signals-and-game-flow.md) · next: [State and entities](06-state-and-entities.md)
 
 **This is the most important chapter in this course.** If you take one idea away
 from the whole thing, take this one.
@@ -117,7 +117,7 @@ prints:
 That is not a nice-to-have. That is the *only* honest way to know whether your
 game is fair. The alternative is playing it yourself two hundred times and
 trusting your memory, and your memory is not trustworthy.
-[Chapter 16](16-testing-and-balancing.md) is entirely about this.
+[Chapter 19](19-testing-and-balancing.md) is entirely about this.
 
 ### 2. You can test
 
@@ -199,6 +199,24 @@ The game references the rules. The rules reference nothing. There is no way to
 add a reference in the other direction without a circular-dependency error, so
 the direction cannot rot.
 
+```mermaid
+flowchart TB
+    subgraph game["game/  ·  Godot  ·  the screen"]
+        GR[GameRoot] --> BV[BattleView] --> AV[ActorView]
+    end
+    subgraph core["src/Rpg.Core  ·  plain C#  ·  the rules"]
+        C[Campaign] --> B[Battle] --> A[Actor]
+        B --> E[GameEvent]
+    end
+    GR -->|drives| C
+    BV -->|"TakeTurn(action)"| B
+    B -.->|"List#lt;GameEvent#gt;"| BV
+    core x--x|"no reference: will not compile"| game
+```
+
+Solid arrows are the only calls that exist. The dotted one is a *return value*.
+There is no arrow from the rules into the screen, and there cannot be.
+
 ### What lives on each side
 
 | Side | Project | Contains |
@@ -216,7 +234,7 @@ List<GameEvent> log = battle.TakeTurn(action);
 ```
 
 You give the rules **an action**. The rules give you back **a list of things that
-happened**. That is the entire interface. Chapter 6 is about that list.
+happened**. That is the entire interface. Chapter 7 is about that list.
 
 ---
 
@@ -335,4 +353,4 @@ That is what this chapter buys you.
 
 ---
 
-**Next:** [Chapter 5 — State and entities](05-state-and-entities.md)
+**Next:** [Chapter 6 — State and entities](06-state-and-entities.md)

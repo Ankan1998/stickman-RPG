@@ -19,8 +19,8 @@ genuinely happened in this codebase, and you can read the fix.
 
 ## How to read this
 
-**Read it in order the first time.** The chapters build. Chapter 6 assumes you
-understood chapter 4.
+**Read it in order the first time.** The chapters build. Chapter 7 assumes you
+understood chapter 5.
 
 Each chapter has the same shape:
 
@@ -32,8 +32,8 @@ Each chapter has the same shape:
 | **What it costs you** | The honest trade-off. Every choice has one. |
 | **Try it** | A small change you can make to feel it |
 
-Chapters take 15–30 minutes each. There are seventeen. You do not have to do it
-in one sitting, and you should not.
+Chapters take 15–30 minutes each. There are twenty. You do not have to do it in
+one sitting, and you should not.
 
 ---
 
@@ -45,41 +45,44 @@ in one sitting, and you should not.
 |---|---|---|
 | 1 | [What makes games different](01-what-makes-games-different.md) | Games are simulations you steer, not requests you answer |
 | 2 | [The game loop and time](02-the-game-loop-and-time.md) | Everything happens sixty times a second, forever |
-| 3 | [Engines and the scene tree](03-engines-and-the-scene-tree.md) | What an engine gives you, and what it charges for it |
+| 3 | [Engines and the scene tree](03-engines-and-the-scene-tree.md) | What an engine gives you, what it charges, and why Y points down |
+| 4 | [Input, signals and game flow](04-input-signals-and-game-flow.md) | A click is an intent; only the rules decide if it is legal |
 
 ### Part II — The architecture that makes a game tractable
 
 | | Chapter | The one idea |
 |---|---|---|
-| 4 | [Rules vs presentation](04-rules-vs-presentation.md) | The most important line you will ever draw |
-| 5 | [State and entities](05-state-and-entities.md) | What the game knows, and who is allowed to change it |
-| 6 | [Events and replay](06-events-and-replay.md) | Don't draw the fight — record it, then play the recording |
-| 7 | [Randomness and determinism](07-randomness-and-determinism.md) | Why `new Random()` will ruin your week |
+| 5 | [Rules vs presentation](05-rules-vs-presentation.md) | The most important line you will ever draw |
+| 6 | [State and entities](06-state-and-entities.md) | What the game knows, and who is allowed to change it |
+| 7 | [Events and replay](07-events-and-replay.md) | Don't draw the fight — record it, then play the recording |
+| 8 | [Randomness and determinism](08-randomness-and-determinism.md) | Why `new Random()` will ruin your week |
 
 ### Part III — The rules of the game
 
 | | Chapter | The one idea |
 |---|---|---|
-| 8 | [Turns, actions and resolution](08-turns-actions-and-resolution.md) | Time is a design decision, not a fact |
-| 9 | [Numbers: damage and stat design](09-numbers-and-stat-design.md) | A formula is a personality |
-| 10 | [Status effects and space](10-statuses-and-space.md) | Duration and position turn a fight into a puzzle |
-| 11 | [Content as data](11-content-as-data.md) | Stop writing classes for content |
-| 12 | [Enemy AI](12-enemy-ai.md) | Score every option, pick the best, keep it dumb |
+| 9 | [Turns, actions and resolution](09-turns-actions-and-resolution.md) | Time is a design decision, not a fact |
+| 10 | [Numbers: damage and stat design](10-numbers-and-stat-design.md) | A formula is a personality |
+| 11 | [Status effects and space](11-statuses-and-space.md) | Duration and position turn a fight into a puzzle |
+| 12 | [Content as data](12-content-as-data.md) | Stop writing classes for content |
+| 13 | [Enemy AI](13-enemy-ai.md) | Score every option, pick the best, keep it dumb |
+| 14 | [Progression and the shape of a run](14-progression-and-the-shape-of-a-run.md) | The loop *around* the fights is where the game lives |
 
 ### Part IV — Making it felt
 
 | | Chapter | The one idea |
 |---|---|---|
-| 13 | [Sprites and animation](13-sprites-and-animation.md) | A picture is a window onto a bigger picture |
-| 14 | [Audio](14-audio.md) | Sound is half of impact, and nobody notices it until it's missing |
-| 15 | [UI and game feel](15-ui-and-game-feel.md) | Juice, and a menu that explains itself |
+| 15 | [Sprites and animation](15-sprites-and-animation.md) | A picture is a window onto a bigger picture |
+| 16 | [Audio](16-audio.md) | Sound is half of impact, and nobody notices it until it's missing |
+| 17 | [UI and game feel](17-ui-and-game-feel.md) | Juice, and a menu that explains itself |
 
 ### Part V — Doing this for real
 
 | | Chapter | The one idea |
 |---|---|---|
-| 16 | [Testing and balancing](16-testing-and-balancing.md) | Measure ten thousand fights instead of guessing about one |
-| 17 | [Where to go next](17-where-to-go-next.md) | What to build, in what order, and what to avoid |
+| 18 | [Debugging a game](18-debugging-a-game.md) | Seeds and event logs, not breakpoints |
+| 19 | [Testing and balancing](19-testing-and-balancing.md) | Measure ten thousand fights instead of guessing about one |
+| 20 | [Where to go next](20-where-to-go-next.md) | What to build, in what order, and what to avoid |
 
 ---
 
@@ -104,7 +107,7 @@ It is built in **Godot 4** with **C#**, and it is split hard down the middle:
    game/                  the screen. Godot. Knows everything about the rules.
 ```
 
-That split is chapter 4, and it is the reason the rest of the project is
+That split is chapter 5, and it is the reason the rest of the project is
 teachable at all.
 
 ---

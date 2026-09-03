@@ -1,6 +1,6 @@
-# 5. State and entities
+# 6. State and entities
 
-> **Where you are:** chapter 5 of 17 · [index](README.md) · previous: [Rules vs presentation](04-rules-vs-presentation.md) · next: [Events and replay](06-events-and-replay.md)
+> **Where you are:** chapter 6 of 20 · [index](README.md) · previous: [Rules vs presentation](05-rules-vs-presentation.md) · next: [Events and replay](07-events-and-replay.md)
 
 ---
 
@@ -118,7 +118,7 @@ Look at what that combination gives you. From the presentation layer:
 - `Statuses` — enumerable, not addable *(exposed as `IReadOnlyList`)*
 - `ReviveWith` — invisible *(internal)*
 
-The rule "presentation only reads" from [chapter 4](04-rules-vs-presentation.md)
+The rule "presentation only reads" from [chapter 5](05-rules-vs-presentation.md)
 is not a convention anybody has to remember. It is the type system.
 
 ---
@@ -259,7 +259,7 @@ class Orc : Actor { }
 class GoblinShaman : Goblin { }
 ```
 
-**Do not do this.** [Chapter 11](11-content-as-data.md) makes the full argument,
+**Do not do this.** [Chapter 12](12-content-as-data.md) makes the full argument,
 but the short version is that a 40-class inheritance tree cannot be balanced,
 cannot be saved to disk, cannot be edited by a designer, and cannot be
 hot-reloaded. This project has **22 monsters and one `Actor` class.** The
@@ -383,4 +383,4 @@ about, caught by a test written for exactly that reason.
 
 ---
 
-**Next:** [Chapter 6 — Events and replay](06-events-and-replay.md)
+**Next:** [Chapter 7 — Events and replay](07-events-and-replay.md)

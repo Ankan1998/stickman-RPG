@@ -1,6 +1,6 @@
-# 15. UI and game feel
+# 17. UI and game feel
 
-> **Where you are:** chapter 15 of 17 · [index](README.md) · previous: [Audio](14-audio.md) · next: [Testing and balancing](16-testing-and-balancing.md)
+> **Where you are:** chapter 17 of 20 · [index](README.md) · previous: [Audio](16-audio.md) · next: [Debugging a game](18-debugging-a-game.md)
 
 ---
 
@@ -160,7 +160,7 @@ foreach (var group in legal.OfType<SkillAction>().GroupBy(a => a.Skill.Id))
 ```
 
 The UI is a *view* of the legal moves, not a second source of them. This is the
-same discipline as [chapter 4](04-rules-vs-presentation.md): presentation may
+same discipline as [chapter 5](05-rules-vs-presentation.md): presentation may
 reorganise, never reimplement.
 
 ### 2. Show the consequence
@@ -393,4 +393,4 @@ options feels like to a new player.
 
 ---
 
-**Next:** [Chapter 16 — Testing and balancing](16-testing-and-balancing.md)
+**Next:** [Chapter 18 — Debugging a game](18-debugging-a-game.md)

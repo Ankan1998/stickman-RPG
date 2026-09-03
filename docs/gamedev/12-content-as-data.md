@@ -1,6 +1,6 @@
-# 11. Content as data
+# 12. Content as data
 
-> **Where you are:** chapter 11 of 17 · [index](README.md) · previous: [Status effects and space](10-statuses-and-space.md) · next: [Enemy AI](12-enemy-ai.md)
+> **Where you are:** chapter 12 of 20 · [index](README.md) · previous: [Status effects and space](11-statuses-and-space.md) · next: [Enemy AI](13-enemy-ai.md)
 
 ---
 
@@ -331,4 +331,4 @@ launches from the back rank. Then count how many classes you would need for ever
 
 ---
 
-**Next:** [Chapter 12 — Enemy AI](12-enemy-ai.md)
+**Next:** [Chapter 13 — Enemy AI](13-enemy-ai.md)

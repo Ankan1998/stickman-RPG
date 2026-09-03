@@ -1,12 +1,12 @@
-# 6. Events and replay
+# 7. Events and replay
 
-> **Where you are:** chapter 6 of 17 · [index](README.md) · previous: [State and entities](05-state-and-entities.md) · next: [Randomness and determinism](07-randomness-and-determinism.md)
+> **Where you are:** chapter 7 of 20 · [index](README.md) · previous: [State and entities](06-state-and-entities.md) · next: [Randomness and determinism](08-randomness-and-determinism.md)
 
 ---
 
 ## The problem
 
-[Chapter 4](04-rules-vs-presentation.md) said the rules must not draw anything.
+[Chapter 5](05-rules-vs-presentation.md) said the rules must not draw anything.
 Fine. But the screen still has to show what happened.
 
 So how does the information get across?
@@ -29,7 +29,7 @@ when your handler runs. Half-updated state, in the middle of a loop.
 **They cannot be paused.** The rules resolve a turn in microseconds. Your
 callbacks fire in that same microsecond. But you want to show damage, wait
 300ms, then show the death. Your only options are to make the *rules* wait —
-destroying everything chapter 4 bought you — or to build a queue. And if you
+destroying everything chapter 5 bought you — or to build a queue. And if you
 build a queue, congratulations: you have re-invented this chapter, badly.
 
 **They cannot be inspected, stored, or replayed.** A callback happens and is
@@ -56,15 +56,15 @@ and no time passed.
 What you are holding is a **recording**. What you do with it is entirely your
 business:
 
-```
-   List<GameEvent>
-        |
-        +--> BattleView   plays it slowly, with sound and animation
-        +--> RunStats     counts damage, crits, deaths
-        +--> a test       asserts poison did 4
-        +--> the harness  throws it away and runs the next of 2,250 fights
-        +--> (future)     writes it to a file as a replay
-        +--> (future)     sends it over a network to another player
+```mermaid
+flowchart LR
+    L["List#lt;GameEvent#gt;<br/>one recording"]
+    L --> V["BattleView<br/>plays it slowly, with sound and animation"]
+    L --> S["RunStats<br/>counts damage, crits, deaths"]
+    L --> T["a test<br/>asserts poison did 4"]
+    L --> H["the harness<br/>discards it, runs the next of 2,250 fights"]
+    L -.-> R["(future) a replay file"]
+    L -.-> N["(future) another player, over a network"]
 ```
 
 Every one of those reads the *same* recording. They cannot disagree about what
@@ -135,7 +135,7 @@ Assert.Equal(RunBattle(seed: 42).Log, RunBattle(seed: 42).Log);
 With ordinary classes that would compare memory addresses and always fail. With
 records it compares *contents*, so it genuinely asserts "the same seed produced
 the same battle". That is the determinism test, and it is
-[chapter 7](07-randomness-and-determinism.md).
+[chapter 8](08-randomness-and-determinism.md).
 
 ---
 
@@ -205,6 +205,23 @@ bug in yours.
 
 So during replay, **the world is in the future** relative to what you are
 drawing.
+
+```mermaid
+sequenceDiagram
+    participant B as Battle (model)
+    participant V as BattleView (replay)
+    participant A as ActorView
+    B->>B: TakeTurn: hero.Health becomes 0
+    B-->>V: [Damaged, StatusTicked, Died]
+    V->>A: replay Damaged, then Refresh()
+    Note over A: reads hero.IsAlive == false<br/>starts the death animation
+    V->>V: await 0.30 s
+    V->>A: replay Died, then PlayDeath()
+    Note over A: starts the death animation AGAIN
+```
+
+The bottom note is the bug. Both observers were right that the hero was dead.
+Neither knew the other had already reacted.
 
 ### The bug this caused
 
@@ -390,4 +407,4 @@ Then put it back.
 
 ---
 
-**Next:** [Chapter 7 — Randomness and determinism](07-randomness-and-determinism.md)
+**Next:** [Chapter 8 — Randomness and determinism](08-randomness-and-determinism.md)

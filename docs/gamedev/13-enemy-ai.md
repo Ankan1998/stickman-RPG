@@ -1,6 +1,6 @@
-# 12. Enemy AI
+# 13. Enemy AI
 
-> **Where you are:** chapter 12 of 17 · [index](README.md) · previous: [Content as data](11-content-as-data.md) · next: [Sprites and animation](13-sprites-and-animation.md)
+> **Where you are:** chapter 13 of 20 · [index](README.md) · previous: [Content as data](12-content-as-data.md) · next: [Progression and the shape of a run](14-progression-and-the-shape-of-a-run.md)
 
 ---
 
@@ -55,7 +55,7 @@ tune*, not *logic you have to rewrite*.
   scored 31." You can print the scores.
 - **It is tunable by a designer.** The behaviour lives in about a dozen numbers.
 - **It cannot cheat**, because the options come from the same `LegalActions` the
-  player's menu is built from ([chapter 8](08-turns-actions-and-resolution.md)).
+  player's menu is built from ([chapter 9](09-turns-actions-and-resolution.md)).
 
 ---
 
@@ -135,7 +135,7 @@ the weakest target every time — which looks idiotic and wastes its best skill.
 
 **Killing is worth far more than damage.** `LethalBonus` is 60, when a big hit is
 about 25. Because removing an actor removes *all of their future turns*. This is
-the action-economy insight from [chapter 9](09-numbers-and-stat-design.md),
+the action-economy insight from [chapter 10](10-numbers-and-stat-design.md),
 expressed as a number.
 
 **Damage over time is discounted:**
@@ -193,7 +193,7 @@ public static double ThreatOf(Actor target)
 Notice it **reads the target's skill list** to decide they are a healer. Nobody
 tagged the Cleric as "the healer". Add a new healing hero tomorrow and the
 monsters will hunt them too, automatically. That is content-as-data
-([chapter 11](11-content-as-data.md)) paying off in a system that was written
+([chapter 12](12-content-as-data.md)) paying off in a system that was written
 before that hero existed.
 
 ---
@@ -226,7 +226,7 @@ Two fixes, and both are worth knowing:
 
 1. **Turn the weight down**, 0.55 → 0.30. The monsters still prefer the healer;
    they no longer ignore everything else to reach her.
-2. **Give the player counterplay.** [Positioning](10-statuses-and-space.md) means
+2. **Give the player counterplay.** [Positioning](11-statuses-and-space.md) means
    you can put the Cleric in rank 3, where melee cannot reach her at all.
 
 > **The general lesson, and it is a big one: your AI's job is not to win. It is
@@ -297,7 +297,7 @@ Telling the player how the AI thinks does not make the game easier. It turns
 **Tuning eleven interacting numbers is genuinely hard.** They are not
 independent. Raising `LethalBonus` implicitly lowers the relative value of
 healing. The only honest way to tune them is to *measure*
-([chapter 16](16-testing-and-balancing.md)) — which is exactly how
+([chapter 19](19-testing-and-balancing.md)) — which is exactly how
 `ThreatWeight` got to 0.30.
 
 **Scoring runs every turn for every actor.** `LegalActions` allocates a fresh
@@ -342,4 +342,4 @@ to clear.
 
 ---
 
-**Next:** [Chapter 13 — Sprites and animation](13-sprites-and-animation.md)
+**Next:** [Chapter 14 — Progression and the shape of a run](14-progression-and-the-shape-of-a-run.md)

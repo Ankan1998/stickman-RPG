@@ -1,6 +1,6 @@
 # 1. What makes games different
 
-> **Where you are:** chapter 1 of 17 · [index](README.md) · next: [The game loop and time](02-the-game-loop-and-time.md)
+> **Where you are:** chapter 1 of 20 · [index](README.md) · next: [The game loop and time](02-the-game-loop-and-time.md)
 
 ---
 
@@ -95,10 +95,10 @@ right log line can still be **wrong**, because:
 
 None of that is a bug in any test you could write. All of it is the difference
 between a game people play and a game people close. The industry word is **game
-feel**, or **juice**, and it gets [its own chapter](15-ui-and-game-feel.md).
+feel**, or **juice**, and it gets [its own chapter](17-ui-and-game-feel.md).
 
 > **The real lesson:** in games the presentation is not a thin veneer over the
-> logic. It is half the product. Which is exactly *why* chapter 4 insists on
+> logic. It is half the product. Which is exactly *why* chapter 5 insists on
 > keeping it rigorously separate from the rules — the two halves are equally
 > important, and equally deserve room to be done well.
 
@@ -121,7 +121,7 @@ logic. A shipped RPG has tens of thousands.
 If each of those had been a C# class, this project would be impossible to
 maintain and impossible to balance. They are not classes. They are **data** —
 rows of numbers fed into a handful of generic systems. That idea is
-[chapter 11](11-content-as-data.md), and it is probably the single biggest
+[chapter 12](12-content-as-data.md), and it is probably the single biggest
 practical difference between hobby game code and professional game code.
 
 ---
@@ -207,13 +207,13 @@ now, because every later chapter refers back to it:
 
 The arrow points one way only. `Rpg.Core` has never heard of Godot and *cannot*
 call into it — not by convention or good intentions, but because the compiler
-will not let it. That is [chapter 4](04-rules-vs-presentation.md).
+will not let it. That is [chapter 5](05-rules-vs-presentation.md).
 
 **The payoff, stated up front so you know why you are reading all this:** because
 the rules need no screen, this project can simulate **250 complete campaigns —
 2,250 fights — in about a second, inside a unit test.** That is how its
 difficulty was tuned. Not by guessing. By measuring. See
-[chapter 16](16-testing-and-balancing.md).
+[chapter 19](19-testing-and-balancing.md).
 
 ---
 

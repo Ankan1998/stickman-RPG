@@ -1,6 +1,6 @@
-# 10. Status effects and space
+# 11. Status effects and space
 
-> **Where you are:** chapter 10 of 17 · [index](README.md) · previous: [Numbers: damage and stat design](09-numbers-and-stat-design.md) · next: [Content as data](11-content-as-data.md)
+> **Where you are:** chapter 11 of 20 · [index](README.md) · previous: [Numbers: damage and stat design](10-numbers-and-stat-design.md) · next: [Content as data](12-content-as-data.md)
 
 ---
 
@@ -38,7 +38,7 @@ This game has fourteen. From
 
 ## The template/instance split, again
 
-You met this in [chapter 5](05-state-and-entities.md), and statuses are the
+You met this in [chapter 6](06-state-and-entities.md), and statuses are the
 clearest example:
 
 ```csharp
@@ -107,7 +107,7 @@ the decision is documented as a decision:
 ### 3. Status modifiers are just addition
 
 Because `CurrentStats` sums the modifiers of every active status
-([chapter 5](05-state-and-entities.md)), a debuff needs no special handling
+([chapter 6](06-state-and-entities.md)), a debuff needs no special handling
 anywhere:
 
 ```csharp
@@ -215,7 +215,7 @@ Some real skills:
 
 The beautiful part is how *little* code this takes, because it slots into
 `LegalActions` — the single source of moves from
-[chapter 8](08-turns-actions-and-resolution.md):
+[chapter 9](09-turns-actions-and-resolution.md):
 
 ```csharp
 // In LegalActions - can I use this at all from where I stand?
@@ -246,7 +246,7 @@ just the numbers.
 ```
 
 Implemented by computing rank on demand rather than storing it
-([chapter 5](05-state-and-entities.md) again):
+([chapter 6](06-state-and-entities.md) again):
 
 ```csharp
 public int RankOf(Actor actor)
@@ -330,7 +330,7 @@ Two things had to be fixed once that was visible:
    back was untouchable, which makes the formation a *solved problem* rather than
    a decision. Both now field something with reach.
 2. Tiers 1 and 2 had lost their teeth entirely, and needed retuning — which is
-   the story in [chapter 16](16-testing-and-balancing.md).
+   the story in [chapter 19](19-testing-and-balancing.md).
 
 > **The general lesson: adding a mechanic changes the balance of everything that
 > already existed.** You cannot add positioning and keep your old numbers. Budget
@@ -382,4 +382,4 @@ telling you exactly which rank strands her.
 
 ---
 
-**Next:** [Chapter 11 — Content as data](11-content-as-data.md)
+**Next:** [Chapter 12 — Content as data](12-content-as-data.md)

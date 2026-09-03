@@ -1,6 +1,6 @@
 # 3. Engines and the scene tree
 
-> **Where you are:** chapter 3 of 17 · [index](README.md) · previous: [The game loop and time](02-the-game-loop-and-time.md) · next: [Rules vs presentation](04-rules-vs-presentation.md)
+> **Where you are:** chapter 3 of 20 · [index](README.md) · previous: [The game loop and time](02-the-game-loop-and-time.md) · next: [Input, signals and game flow](04-input-signals-and-game-flow.md)
 
 ---
 
@@ -157,6 +157,94 @@ It also caused a real bug, which is worth knowing about because it is a classic:
 
 ---
 
+## Coordinates: the Y axis points down
+
+Here is the thing that trips up every programmer who learned graphs at school.
+
+In maths, Y goes up. On a screen, **Y goes down.** The origin `(0, 0)` is the
+**top-left** corner, X increases to the right, and Y increases *towards the
+bottom of the screen*.
+
+```
+   (0,0) ---------------------------------> X
+     |
+     |        . (300, 100)
+     |
+     |                          . (600, 350)
+     |
+     v
+     Y
+```
+
+So "move up" is `position.Y -= 5`, not `+= 5`. You will write it the wrong way
+round exactly once, watch your sprite dive into the floor, and never forget it.
+
+Look at the floating damage numbers in
+[`FloatingNumber`](../../game/scripts/FloatingNumber.cs). They drift *upward*:
+
+```csharp
+tween.TweenProperty(this, "position:y", Position.Y - rise, seconds)   // minus = up
+```
+
+### `Vector2`: a position is two numbers, treated as one
+
+Godot bundles x and y into a `Vector2`, and you can add, subtract and scale them
+as single values. The pattern you will use most is **centring**: to put a thing
+of size *s* over a point *p*, place its top-left corner at `p - s/2`.
+
+```csharp
+// EffectOverlay.Spawn - centre a 96x96 effect on the impact point
+fx.Position = centre - new Vector2(size / 2f, size / 2f);
+```
+
+### Local vs global: every position is relative to a parent
+
+This is the one that produces the "my effect appears in the wrong place" bug.
+
+A node's `Position` is relative to its **parent**, not to the screen. Move the
+parent and every child moves with it (that is [the tree](#the-tree-is-not-just-organisation)
+doing its job). The screen-space position is the **global** one — all the parent
+offsets summed up the tree.
+
+Which means that to put a thing from one branch of the tree *over* a thing in
+another branch, you have to **translate between spaces**. This project does it
+in one place, and it is worth reading twice:
+
+```csharp
+// ActorView: where the sprite is, in SCREEN coordinates.
+public Vector2 ImpactPoint => _stage.GetGlobalRect().GetCenter();
+
+// BattleView: convert a screen point into the effect layer's OWN coordinates.
+private Vector2 ToFx(Vector2 globalPoint) => globalPoint - _fx.GetGlobalRect().Position;
+```
+
+The effect layer `_fx` is a sibling of the battle line, not a parent of it. So an
+effect positioned at the sprite's *global* point would be offset by exactly
+wherever `_fx` itself sits. Subtracting `_fx`'s global origin fixes it.
+
+> **The rule: when something appears offset by a suspiciously round amount,
+> you have mixed local and global coordinates.** Every engine has this
+> distinction; every beginner hits it.
+
+### Anchors: how UI survives a resize
+
+`Node2D` positions are pixels. `Control` positions are **anchors** — fractions of
+the parent, from 0 to 1 — plus pixel offsets. Anchor a panel's right edge at 1.0
+and it stays on the right edge whatever size the window becomes.
+
+```csharp
+next.SetAnchorsPreset(LayoutPreset.FullRect);     // fill the parent entirely
+
+footer.SetAnchorsPreset(LayoutPreset.BottomWide); // stick to the bottom edge...
+footer.OffsetTop = -56;                           // ...and be 56 px tall
+```
+
+That second one is the camp screen's pinned footer — the fix for the "Enter
+dungeon" button that once scrolled off the bottom of the window
+([chapter 17](17-ui-and-game-feel.md)).
+
+---
+
 ## Scenes: the reusable chunk
 
 A **scene** is a saved subtree, in a `.tscn` file. It is Godot's version of a
@@ -256,7 +344,7 @@ public static Texture2D? Texture(string fileName) =>
 
 Every caller handles `null` by drawing nothing, so a missing sprite is a hole on
 screen rather than a crash — the "fail silently for decoration" rule from
-[chapter 14](14-audio.md).
+[chapter 16](16-audio.md).
 
 Godot's `ResourceLoader` keeps its own cache of loaded resources, so repeated
 `GD.Load` calls for the same path do not re-read the disk. Where a cache *is*
@@ -329,4 +417,4 @@ reproduced on demand. Put it back.
 
 ---
 
-**Next:** [Chapter 4 — Rules vs presentation](04-rules-vs-presentation.md)
+**Next:** [Chapter 4 — Input, signals and game flow](04-input-signals-and-game-flow.md)

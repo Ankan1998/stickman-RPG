@@ -1,6 +1,6 @@
-# 13. Sprites and animation
+# 15. Sprites and animation
 
-> **Where you are:** chapter 13 of 17 · [index](README.md) · previous: [Enemy AI](12-enemy-ai.md) · next: [Audio](14-audio.md)
+> **Where you are:** chapter 15 of 20 · [index](README.md) · previous: [Progression and the shape of a run](14-progression-and-the-shape-of-a-run.md) · next: [Audio](16-audio.md)
 
 ---
 
@@ -250,7 +250,7 @@ positioned by hand inside it.
 
 ### 3. The death that played twice
 
-The full story is in [chapter 6](06-events-and-replay.md). The animation-specific
+The full story is in [chapter 7](07-events-and-replay.md). The animation-specific
 part is that `PlayDeath` did this:
 
 ```csharp
@@ -367,4 +367,4 @@ sixteen effect strips ship with the pack and only about half are used.
 
 ---
 
-**Next:** [Chapter 14 — Audio](14-audio.md)
+**Next:** [Chapter 16 — Audio](16-audio.md)

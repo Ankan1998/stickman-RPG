@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    THE MOST IMPORTANT FILE IN THE REPO.
+    Notice what is NOT here: any reference to Godot.
+    This library is pure C#. It knows nothing about rendering, input, or scenes.
+    Keep it that way. If you ever need `using Godot;` in this project, the design
+    has gone wrong - move that code into game/ instead.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+</Project>

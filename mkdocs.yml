@@ -85,7 +85,13 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        # ```mermaid blocks render as diagrams. GitHub renders the same fences
+        # natively, so one source works in both places.
+        - name: mermaid
+          class: mermaid-diagram
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -93,6 +99,13 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+
+# Diagrams are rendered eagerly by our own module rather than by Material's
+# built-in lazy (viewport-triggered) mount, which leaves empty boxes in
+# background tabs and when printing, and hides syntax errors as blank gaps.
+extra_javascript:
+  - path: javascripts/mermaid-init.js
+    type: module
 
 extra:
   social:

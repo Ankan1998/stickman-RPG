@@ -42,3 +42,39 @@
 .md-typeset pre {
   overflow-x: auto;
 }
+
+/* ==========================================================================
+   Mermaid diagrams (rendered by javascripts/mermaid-init.js)
+   ========================================================================== */
+
+/* Centre them, give them air, and let a wide one scroll on its own instead of
+   forcing the whole page to scroll sideways. */
+.mermaid-diagram {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  margin: 1.4rem 0;
+  padding: 0.6rem 0;
+}
+
+/* Hide the raw source until the SVG replaces it, so the page never flashes a
+   block of diagram code. A failed render un-hides itself with a message. */
+.mermaid-diagram:not(.mermaid-rendered):not(.mermaid-failed) {
+  visibility: hidden;
+  min-height: 2rem;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-diagram.mermaid-failed {
+  display: block;
+  border-left: 0.15rem solid var(--md-typeset-del-color, #f66);
+  background-color: var(--md-default-fg-color--lightest);
+  padding: 0.8rem 1rem;
+  border-radius: 0.15rem;
+  font-size: 0.75rem;
+  visibility: visible;
+}

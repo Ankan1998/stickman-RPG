@@ -1,0 +1,4332 @@
+{
+  "name": "Stickman RPG Asset Pack",
+  "version": "1.0.0",
+  "generated_by": "Python generators in tools/ - re-run to regenerate",
+  "license": "Made for this project; use freely.",
+  "conventions": {
+    "character_size": [
+      32,
+      40
+    ],
+    "weapon_icon_size": [
+      24,
+      24
+    ],
+    "tile_size": [
+      16,
+      16
+    ],
+    "fx_size": [
+      32,
+      32
+    ],
+    "filtering": "nearest-neighbour - do not smooth when scaling",
+    "recommended_scale": "characters 3x, tiles 3-4x, integer scales only",
+    "anchor": "characters stand on the bottom edge, horizontally centred",
+    "animation_fps": {
+      "idle": 6,
+      "walk": 10,
+      "attack": 12,
+      "hurt": 14,
+      "death": 8
+    }
+  },
+  "heroes": [
+    {
+      "name": "warrior",
+      "label": "Warrior",
+      "dir": "characters/heroes/warrior",
+      "blurb": "Sword and board. High HP, taunts, soaks the front rank.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "warrior_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "warrior_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "warrior_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "warrior_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "warrior_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "warrior.png",
+      "defeated": "warrior_down.png",
+      "role": "Tank / melee bruiser",
+      "weapon": "sword",
+      "offhand": "shield"
+    },
+    {
+      "name": "paladin",
+      "label": "Paladin",
+      "dir": "characters/heroes/paladin",
+      "blurb": "Holy warhammer and consecrated shield. Heals on smite.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "paladin_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "paladin_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "paladin_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "paladin_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "paladin_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "paladin.png",
+      "defeated": "paladin_down.png",
+      "role": "Tank / support",
+      "weapon": "hammer",
+      "offhand": "shield"
+    },
+    {
+      "name": "ranger",
+      "label": "Ranger",
+      "dir": "characters/heroes/ranger",
+      "blurb": "Longbow, high crit, opens every fight from the back rank.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "ranger_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "ranger_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "ranger_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "ranger_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "ranger_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "ranger.png",
+      "defeated": "ranger_down.png",
+      "role": "Ranged DPS",
+      "weapon": "bow",
+      "offhand": null
+    },
+    {
+      "name": "rogue",
+      "label": "Rogue",
+      "dir": "characters/heroes/rogue",
+      "blurb": "Twin daggers and poison. Massive damage from stealth.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "rogue_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "rogue_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "rogue_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "rogue_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "rogue_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "rogue.png",
+      "defeated": "rogue_down.png",
+      "role": "Burst DPS",
+      "weapon": "dagger",
+      "offhand": "dagger"
+    },
+    {
+      "name": "mage",
+      "label": "Mage",
+      "dir": "characters/heroes/mage",
+      "blurb": "Arcane staff. Hits every enemy, folds if anything reaches her.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "mage_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "mage_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "mage_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "mage_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "mage_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "mage.png",
+      "defeated": "mage_down.png",
+      "role": "Magic DPS",
+      "weapon": "staff",
+      "offhand": null
+    },
+    {
+      "name": "cleric",
+      "label": "Cleric",
+      "dir": "characters/heroes/cleric",
+      "blurb": "Restores the party and shrugs off curses. Mace for emergencies.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "cleric_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "cleric_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "cleric_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "cleric_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "cleric_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "cleric.png",
+      "defeated": "cleric_down.png",
+      "role": "Healer",
+      "weapon": "mace",
+      "offhand": null
+    },
+    {
+      "name": "berserker",
+      "label": "Berserker",
+      "dir": "characters/heroes/berserker",
+      "blurb": "Greataxe, no armour. Damage scales as his HP drops.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "berserker_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "berserker_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "berserker_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "berserker_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "berserker_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "berserker.png",
+      "defeated": "berserker_down.png",
+      "role": "Melee DPS",
+      "weapon": "greataxe",
+      "offhand": null
+    },
+    {
+      "name": "monk",
+      "label": "Monk",
+      "dir": "characters/heroes/monk",
+      "blurb": "Iron claws and footwork. Dodges, then counters twice.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "monk_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "monk_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "monk_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "monk_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "monk_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "monk.png",
+      "defeated": "monk_down.png",
+      "role": "Melee / evasion",
+      "weapon": "claw",
+      "offhand": "claw"
+    },
+    {
+      "name": "necromancer",
+      "label": "Necromancer",
+      "dir": "characters/heroes/necromancer",
+      "blurb": "Raises the fallen. Every corpse on the field is a resource.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "necromancer_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "necromancer_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "necromancer_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "necromancer_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "necromancer_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "necromancer.png",
+      "defeated": "necromancer_down.png",
+      "role": "Summoner",
+      "weapon": "scythe",
+      "offhand": null
+    },
+    {
+      "name": "templar",
+      "label": "Templar",
+      "dir": "characters/heroes/templar",
+      "blurb": "Two-handed greatsword. Slow, enormous, cleaves the whole row.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "templar_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "templar_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "templar_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "templar_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "templar_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "templar.png",
+      "defeated": "templar_down.png",
+      "role": "Frontline DPS",
+      "weapon": "greatsword",
+      "offhand": null
+    }
+  ],
+  "enemies": [
+    {
+      "name": "goblin_grunt",
+      "label": "Goblin Grunt",
+      "dir": "characters/enemies/goblin_grunt",
+      "blurb": "Cowardly, numerous, hits in packs.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "goblin_grunt_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "goblin_grunt_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "goblin_grunt_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "goblin_grunt_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "goblin_grunt_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "goblin_grunt.png",
+      "defeated": "goblin_grunt_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "club"
+    },
+    {
+      "name": "goblin_archer",
+      "label": "Goblin Archer",
+      "dir": "characters/enemies/goblin_archer",
+      "blurb": "Stays at the back and plinks.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "goblin_archer_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "goblin_archer_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "goblin_archer_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "goblin_archer_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "goblin_archer_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "goblin_archer.png",
+      "defeated": "goblin_archer_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "bow"
+    },
+    {
+      "name": "goblin_shaman",
+      "label": "Goblin Shaman",
+      "dir": "characters/enemies/goblin_shaman",
+      "blurb": "Curses and weak hexes.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "goblin_shaman_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "goblin_shaman_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "goblin_shaman_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "goblin_shaman_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "goblin_shaman_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "goblin_shaman.png",
+      "defeated": "goblin_shaman_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "wand"
+    },
+    {
+      "name": "kobold",
+      "label": "Kobold",
+      "dir": "characters/enemies/kobold",
+      "blurb": "Trap-setter. Fragile but fast.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "kobold_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "kobold_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "kobold_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "kobold_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "kobold_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "kobold.png",
+      "defeated": "kobold_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "dagger"
+    },
+    {
+      "name": "giant_rat",
+      "label": "Giant Rat",
+      "dir": "characters/enemies/giant_rat",
+      "blurb": "Diseased bite, swarms in numbers.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "giant_rat_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "giant_rat_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "giant_rat_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "giant_rat_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "giant_rat_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "giant_rat.png",
+      "defeated": "giant_rat_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "claw"
+    },
+    {
+      "name": "bat",
+      "label": "Cave Bat",
+      "dir": "characters/enemies/bat",
+      "blurb": "Erratic flyer, drains a little life.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "bat_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "bat_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "bat_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "bat_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "bat_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "bat.png",
+      "defeated": "bat_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "claw"
+    },
+    {
+      "name": "slime",
+      "label": "Green Slime",
+      "dir": "characters/enemies/slime",
+      "blurb": "Splits when struck. Corrodes weapons.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "slime_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "slime_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "slime_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "slime_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "slime_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "slime.png",
+      "defeated": "slime_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": null
+    },
+    {
+      "name": "skeleton",
+      "label": "Skeleton",
+      "dir": "characters/enemies/skeleton",
+      "blurb": "Reassembles unless the skull is broken.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "skeleton_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "skeleton_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "skeleton_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "skeleton_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "skeleton_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "skeleton.png",
+      "defeated": "skeleton_down.png",
+      "tier": 1,
+      "tier_name": "fodder",
+      "weapon": "sword"
+    },
+    {
+      "name": "skeleton_archer",
+      "label": "Bone Archer",
+      "dir": "characters/enemies/skeleton_archer",
+      "blurb": "Fires splintered arrows.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "skeleton_archer_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "skeleton_archer_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "skeleton_archer_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "skeleton_archer_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "skeleton_archer_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "skeleton_archer.png",
+      "defeated": "skeleton_archer_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "bow"
+    },
+    {
+      "name": "zombie",
+      "label": "Zombie",
+      "dir": "characters/enemies/zombie",
+      "blurb": "Slow, relentless, infects on hit.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "zombie_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "zombie_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "zombie_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "zombie_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "zombie_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "zombie.png",
+      "defeated": "zombie_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "ghoul",
+      "label": "Ghoul",
+      "dir": "characters/enemies/ghoul",
+      "blurb": "Leaps the back line and feeds.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "ghoul_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "ghoul_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "ghoul_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "ghoul_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "ghoul_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "ghoul.png",
+      "defeated": "ghoul_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "bandit",
+      "label": "Bandit",
+      "dir": "characters/enemies/bandit",
+      "blurb": "Steals gold on a successful hit.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "bandit_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "bandit_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "bandit_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "bandit_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "bandit_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "bandit.png",
+      "defeated": "bandit_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "sword"
+    },
+    {
+      "name": "cultist",
+      "label": "Cultist",
+      "dir": "characters/enemies/cultist",
+      "blurb": "Sacrifices allies to empower itself.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "cultist_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "cultist_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "cultist_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "cultist_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "cultist_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "cultist.png",
+      "defeated": "cultist_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "dagger"
+    },
+    {
+      "name": "orc_brute",
+      "label": "Orc Brute",
+      "dir": "characters/enemies/orc_brute",
+      "blurb": "Big swing, big opening.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "orc_brute_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "orc_brute_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "orc_brute_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "orc_brute_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "orc_brute_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "orc_brute.png",
+      "defeated": "orc_brute_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "club"
+    },
+    {
+      "name": "dire_wolf",
+      "label": "Dire Wolf",
+      "dir": "characters/enemies/dire_wolf",
+      "blurb": "Pack hunter, always strikes first.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "dire_wolf_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "dire_wolf_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "dire_wolf_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "dire_wolf_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "dire_wolf_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "dire_wolf.png",
+      "defeated": "dire_wolf_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "giant_spider",
+      "label": "Giant Spider",
+      "dir": "characters/enemies/giant_spider",
+      "blurb": "Webs a target, then poisons it.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "giant_spider_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "giant_spider_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "giant_spider_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "giant_spider_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "giant_spider_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "giant_spider.png",
+      "defeated": "giant_spider_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "scorpion",
+      "label": "Sand Scorpion",
+      "dir": "characters/enemies/scorpion",
+      "blurb": "Stinger applies stacking poison.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "scorpion_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "scorpion_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "scorpion_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "scorpion_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "scorpion_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "scorpion.png",
+      "defeated": "scorpion_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "harpy",
+      "label": "Harpy",
+      "dir": "characters/enemies/harpy",
+      "blurb": "Screeches, stuns, and dives.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "harpy_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "harpy_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "harpy_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "harpy_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "harpy_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "harpy.png",
+      "defeated": "harpy_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "imp",
+      "label": "Imp",
+      "dir": "characters/enemies/imp",
+      "blurb": "Flings fire from out of reach.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "imp_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "imp_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "imp_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "imp_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "imp_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "imp.png",
+      "defeated": "imp_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "wand"
+    },
+    {
+      "name": "gargoyle",
+      "label": "Gargoyle",
+      "dir": "characters/enemies/gargoyle",
+      "blurb": "Stone skin. Immune until it animates.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "gargoyle_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "gargoyle_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "gargoyle_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "gargoyle_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "gargoyle_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "gargoyle.png",
+      "defeated": "gargoyle_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "treant",
+      "label": "Treant",
+      "dir": "characters/enemies/treant",
+      "blurb": "Roots the party in place. Weak to fire.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "treant_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "treant_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "treant_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "treant_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "treant_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "treant.png",
+      "defeated": "treant_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "club"
+    },
+    {
+      "name": "mimic",
+      "label": "Mimic",
+      "dir": "characters/enemies/mimic",
+      "blurb": "Looks exactly like the chest you wanted.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "mimic_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "mimic_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "mimic_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "mimic_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "mimic_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "mimic.png",
+      "defeated": "mimic_down.png",
+      "tier": 2,
+      "tier_name": "regular",
+      "weapon": "claw"
+    },
+    {
+      "name": "orc_warchief",
+      "label": "Orc Warchief",
+      "dir": "characters/enemies/orc_warchief",
+      "blurb": "Rallies every orc on the field.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "orc_warchief_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "orc_warchief_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "orc_warchief_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "orc_warchief_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "orc_warchief_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "orc_warchief.png",
+      "defeated": "orc_warchief_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": "greataxe"
+    },
+    {
+      "name": "skeleton_knight",
+      "label": "Bone Knight",
+      "dir": "characters/enemies/skeleton_knight",
+      "blurb": "Armoured undead. Parries.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "skeleton_knight_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "skeleton_knight_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "skeleton_knight_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "skeleton_knight_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "skeleton_knight_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "skeleton_knight.png",
+      "defeated": "skeleton_knight_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": "greatsword"
+    },
+    {
+      "name": "wraith",
+      "label": "Wraith",
+      "dir": "characters/enemies/wraith",
+      "blurb": "Ignores armour entirely.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "wraith_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "wraith_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "wraith_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "wraith_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "wraith_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "wraith.png",
+      "defeated": "wraith_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": "scythe"
+    },
+    {
+      "name": "minotaur",
+      "label": "Minotaur",
+      "dir": "characters/enemies/minotaur",
+      "blurb": "Charges through the entire front rank.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "minotaur_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "minotaur_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "minotaur_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "minotaur_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "minotaur_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "minotaur.png",
+      "defeated": "minotaur_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": "greataxe"
+    },
+    {
+      "name": "demon_lord",
+      "label": "Demon Lord",
+      "dir": "characters/enemies/demon_lord",
+      "blurb": "Summons imps and burns the ground.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "demon_lord_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "demon_lord_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "demon_lord_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "demon_lord_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "demon_lord_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "demon_lord.png",
+      "defeated": "demon_lord_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": "trident"
+    },
+    {
+      "name": "lich",
+      "label": "Lich King",
+      "dir": "characters/enemies/lich",
+      "blurb": "Resurrects itself once. Kill it twice.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "lich_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "lich_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "lich_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "lich_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "lich_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "lich.png",
+      "defeated": "lich_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": "staff"
+    },
+    {
+      "name": "beholder",
+      "label": "Gaze Tyrant",
+      "dir": "characters/enemies/beholder",
+      "blurb": "Every eye fires a different curse.",
+      "animations": {
+        "idle": {
+          "frames": 4,
+          "fps": 6,
+          "strip": "beholder_idle_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "walk": {
+          "frames": 6,
+          "fps": 10,
+          "strip": "beholder_walk_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "attack": {
+          "frames": 6,
+          "fps": 12,
+          "strip": "beholder_attack_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "hurt": {
+          "frames": 3,
+          "fps": 14,
+          "strip": "beholder_hurt_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        },
+        "death": {
+          "frames": 6,
+          "fps": 8,
+          "strip": "beholder_death_strip.png",
+          "frame_w": 32,
+          "frame_h": 40
+        }
+      },
+      "still": "beholder.png",
+      "defeated": "beholder_down.png",
+      "tier": 3,
+      "tier_name": "elite",
+      "weapon": null
+    }
+  ],
+  "weapons": [
+    {
+      "name": "rusty_shortsword",
+      "label": "Rusty Shortsword",
+      "archetype": "sword",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "Chipped, pitted, and technically still a sword.",
+      "file": "weapons/rusty_shortsword.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "iron_sword",
+      "label": "Iron Sword",
+      "archetype": "sword",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "The default. Reliable and unremarkable.",
+      "file": "weapons/iron_sword.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "steel_longsword",
+      "label": "Steel Longsword",
+      "archetype": "sword",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Properly forged. Holds an edge through a whole floor.",
+      "file": "weapons/steel_longsword.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "flamebrand",
+      "label": "Flamebrand",
+      "archetype": "sword",
+      "rarity": "rare",
+      "slot": "1h",
+      "blurb": "Sets the struck target alight for three turns.",
+      "file": "weapons/flamebrand.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "frostbite",
+      "label": "Frostbite",
+      "archetype": "sword",
+      "rarity": "rare",
+      "slot": "1h",
+      "blurb": "Slows anything it cuts. Never needs cleaning.",
+      "file": "weapons/frostbite.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "void_edge",
+      "label": "Void Edge",
+      "archetype": "sword",
+      "rarity": "legendary",
+      "slot": "1h",
+      "blurb": "Ignores armour. Costs a little HP every swing.",
+      "file": "weapons/void_edge.png",
+      "rarity_order": 4
+    },
+    {
+      "name": "tempered_katana",
+      "label": "Tempered Katana",
+      "archetype": "katana",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Folded steel. High crit, low damage floor.",
+      "file": "weapons/tempered_katana.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "bloodfang",
+      "label": "Bloodfang",
+      "archetype": "katana",
+      "rarity": "epic",
+      "slot": "1h",
+      "blurb": "Heals the wielder for a share of the damage dealt.",
+      "file": "weapons/bloodfang.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "iron_greatsword",
+      "label": "Iron Greatsword",
+      "archetype": "greatsword",
+      "rarity": "common",
+      "slot": "2h",
+      "blurb": "Two hands, one target, no subtlety.",
+      "file": "weapons/iron_greatsword.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "dawnbreaker",
+      "label": "Dawnbreaker",
+      "archetype": "greatsword",
+      "rarity": "legendary",
+      "slot": "2h",
+      "blurb": "Cleaves the front rank and blinds the undead.",
+      "file": "weapons/dawnbreaker.png",
+      "rarity_order": 4
+    },
+    {
+      "name": "bandit_dirk",
+      "label": "Bandit's Dirk",
+      "archetype": "dagger",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "Quick, cheap, and easy to hide.",
+      "file": "weapons/bandit_dirk.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "poison_fang",
+      "label": "Poison Fang",
+      "archetype": "dagger",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Applies a stack of poison on every hit.",
+      "file": "weapons/poison_fang.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "shadowstep",
+      "label": "Shadowstep",
+      "archetype": "dagger",
+      "rarity": "epic",
+      "slot": "1h",
+      "blurb": "Guarantees a critical hit from stealth.",
+      "file": "weapons/shadowstep.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "hand_axe",
+      "label": "Hand Axe",
+      "archetype": "axe",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "Doubles as a tool. Chops doors as well as orcs.",
+      "file": "weapons/hand_axe.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "battle_axe",
+      "label": "Battle Axe",
+      "archetype": "axe",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Heavier head, deeper bite.",
+      "file": "weapons/battle_axe.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "skullsplitter",
+      "label": "Skullsplitter",
+      "archetype": "axe",
+      "rarity": "rare",
+      "slot": "1h",
+      "blurb": "Bonus damage against anything with a skull.",
+      "file": "weapons/skullsplitter.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "executioner",
+      "label": "Executioner",
+      "archetype": "greataxe",
+      "rarity": "epic",
+      "slot": "2h",
+      "blurb": "Instantly finishes an enemy below a quarter health.",
+      "file": "weapons/executioner.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "worldcleaver",
+      "label": "Worldcleaver",
+      "archetype": "greataxe",
+      "rarity": "legendary",
+      "slot": "2h",
+      "blurb": "Hits every enemy. Takes a turn to wind up.",
+      "file": "weapons/worldcleaver.png",
+      "rarity_order": 4
+    },
+    {
+      "name": "oak_club",
+      "label": "Oak Club",
+      "archetype": "club",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "A heavy stick. Surprisingly effective.",
+      "file": "weapons/oak_club.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "spiked_club",
+      "label": "Spiked Club",
+      "archetype": "club",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "A heavy stick with opinions.",
+      "file": "weapons/spiked_club.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "iron_mace",
+      "label": "Iron Mace",
+      "archetype": "mace",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "Crushes armour instead of cutting it.",
+      "file": "weapons/iron_mace.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "morningstar",
+      "label": "Morningstar",
+      "archetype": "flail",
+      "rarity": "rare",
+      "slot": "1h",
+      "blurb": "Swings around shields. Cannot be parried.",
+      "file": "weapons/morningstar.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "war_hammer",
+      "label": "War Hammer",
+      "archetype": "hammer",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Stuns on a critical hit.",
+      "file": "weapons/war_hammer.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "thunder_maul",
+      "label": "Thunder Maul",
+      "archetype": "hammer",
+      "rarity": "epic",
+      "slot": "2h",
+      "blurb": "Shockwave hits the two enemies beside the target.",
+      "file": "weapons/thunder_maul.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "hunting_spear",
+      "label": "Hunting Spear",
+      "archetype": "spear",
+      "rarity": "common",
+      "slot": "2h",
+      "blurb": "Reach. Strikes from the second rank.",
+      "file": "weapons/hunting_spear.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "halberd",
+      "label": "Halberd",
+      "archetype": "spear",
+      "rarity": "rare",
+      "slot": "2h",
+      "blurb": "Stops a charge dead.",
+      "file": "weapons/halberd.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "tidecaller",
+      "label": "Tidecaller",
+      "archetype": "trident",
+      "rarity": "epic",
+      "slot": "2h",
+      "blurb": "Three prongs, three chances to crit.",
+      "file": "weapons/tidecaller.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "reaper_scythe",
+      "label": "Reaper's Scythe",
+      "archetype": "scythe",
+      "rarity": "rare",
+      "slot": "2h",
+      "blurb": "Damage scales with how many enemies have died.",
+      "file": "weapons/reaper_scythe.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "soul_harvester",
+      "label": "Soul Harvester",
+      "archetype": "scythe",
+      "rarity": "legendary",
+      "slot": "2h",
+      "blurb": "Every kill grants a free extra turn.",
+      "file": "weapons/soul_harvester.png",
+      "rarity_order": 4
+    },
+    {
+      "name": "apprentice_staff",
+      "label": "Apprentice Staff",
+      "archetype": "staff",
+      "rarity": "common",
+      "slot": "2h",
+      "blurb": "A stick with a rock on it. It does work.",
+      "file": "weapons/apprentice_staff.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "arcane_staff",
+      "label": "Arcane Staff",
+      "archetype": "staff",
+      "rarity": "rare",
+      "slot": "2h",
+      "blurb": "Spells cost one less mana.",
+      "file": "weapons/arcane_staff.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "lich_staff",
+      "label": "Staff of the Lich",
+      "archetype": "staff",
+      "rarity": "legendary",
+      "slot": "2h",
+      "blurb": "Raises the last enemy you killed as an ally.",
+      "file": "weapons/lich_staff.png",
+      "rarity_order": 4
+    },
+    {
+      "name": "oak_wand",
+      "label": "Oak Wand",
+      "archetype": "wand",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "Beginner's focus. Cheap to replace.",
+      "file": "weapons/oak_wand.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "ember_wand",
+      "label": "Ember Wand",
+      "archetype": "wand",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Small, fast fireballs.",
+      "file": "weapons/ember_wand.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "grimoire",
+      "label": "Grimoire",
+      "archetype": "tome",
+      "rarity": "uncommon",
+      "slot": "offhand",
+      "blurb": "Holds one prepared spell you can cast for free.",
+      "file": "weapons/grimoire.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "codex_of_light",
+      "label": "Codex of Light",
+      "archetype": "tome",
+      "rarity": "epic",
+      "slot": "offhand",
+      "blurb": "Heals the whole party at the end of each turn.",
+      "file": "weapons/codex_of_light.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "void_orb",
+      "label": "Void Orb",
+      "archetype": "orb",
+      "rarity": "legendary",
+      "slot": "offhand",
+      "blurb": "Reflects a share of magic damage back at the caster.",
+      "file": "weapons/void_orb.png",
+      "rarity_order": 4
+    },
+    {
+      "name": "short_bow",
+      "label": "Short Bow",
+      "archetype": "bow",
+      "rarity": "common",
+      "slot": "2h",
+      "blurb": "Fast draw, modest damage.",
+      "file": "weapons/short_bow.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "elven_longbow",
+      "label": "Elven Longbow",
+      "archetype": "bow",
+      "rarity": "rare",
+      "slot": "2h",
+      "blurb": "Always strikes first in the round.",
+      "file": "weapons/elven_longbow.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "hand_crossbow",
+      "label": "Hand Crossbow",
+      "archetype": "crossbow",
+      "rarity": "uncommon",
+      "slot": "1h",
+      "blurb": "Punches through shields.",
+      "file": "weapons/hand_crossbow.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "siege_crossbow",
+      "label": "Siege Crossbow",
+      "archetype": "crossbow",
+      "rarity": "epic",
+      "slot": "2h",
+      "blurb": "Enormous damage, fires every other turn.",
+      "file": "weapons/siege_crossbow.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "iron_claws",
+      "label": "Iron Claws",
+      "archetype": "claw",
+      "rarity": "common",
+      "slot": "1h",
+      "blurb": "Two attacks per turn at half damage each.",
+      "file": "weapons/iron_claws.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "dragon_talons",
+      "label": "Dragon Talons",
+      "archetype": "claw",
+      "rarity": "epic",
+      "slot": "1h",
+      "blurb": "Each hit shreds one point of armour, permanently.",
+      "file": "weapons/dragon_talons.png",
+      "rarity_order": 3
+    },
+    {
+      "name": "serpent_whip",
+      "label": "Serpent Whip",
+      "archetype": "whip",
+      "rarity": "rare",
+      "slot": "1h",
+      "blurb": "Hits the back rank without moving.",
+      "file": "weapons/serpent_whip.png",
+      "rarity_order": 2
+    },
+    {
+      "name": "everburning_torch",
+      "label": "Everburning Torch",
+      "archetype": "torch",
+      "rarity": "uncommon",
+      "slot": "offhand",
+      "blurb": "Lights the dungeon and frightens the undead.",
+      "file": "weapons/everburning_torch.png",
+      "rarity_order": 1
+    },
+    {
+      "name": "wooden_shield",
+      "label": "Wooden Shield",
+      "archetype": "shield",
+      "rarity": "common",
+      "slot": "offhand",
+      "blurb": "Blocks the first hit of every fight.",
+      "file": "weapons/wooden_shield.png",
+      "rarity_order": 0
+    },
+    {
+      "name": "tower_shield",
+      "label": "Tower Shield",
+      "archetype": "shield",
+      "rarity": "rare",
+      "slot": "offhand",
+      "blurb": "Covers an adjacent ally as well as yourself.",
+      "file": "weapons/tower_shield.png",
+      "rarity_order": 2
+    }
+  ],
+  "dungeon": [
+    {
+      "name": "floor_stone",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Base dungeon floor.",
+      "file": "dungeon/floor_stone.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_cracked",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Damaged floor variant.",
+      "file": "dungeon/floor_cracked.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_mossy",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Overgrown, for damp rooms.",
+      "file": "dungeon/floor_mossy.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_wood",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Planking for inhabited rooms.",
+      "file": "dungeon/floor_wood.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_sand",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Desert or crypt floor.",
+      "file": "dungeon/floor_sand.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_dirt",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Cave and tunnel floor.",
+      "file": "dungeon/floor_dirt.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_blood",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Marks a past encounter.",
+      "file": "dungeon/floor_blood.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_water",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Shallow water; slows movement.",
+      "file": "dungeon/floor_water.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "floor_lava",
+      "category": "floor",
+      "seamless": true,
+      "blurb": "Damages anything standing on it.",
+      "file": "dungeon/floor_lava.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "wall_stone",
+      "category": "wall",
+      "seamless": true,
+      "blurb": "Standard wall block.",
+      "file": "dungeon/wall_stone.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "wall_stone_top",
+      "category": "wall",
+      "seamless": true,
+      "blurb": "Lit cap for the top wall row.",
+      "file": "dungeon/wall_stone_top.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "wall_cracked",
+      "category": "wall",
+      "seamless": true,
+      "blurb": "Breakable wall variant.",
+      "file": "dungeon/wall_cracked.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "wall_mossy",
+      "category": "wall",
+      "seamless": true,
+      "blurb": "Damp-room wall.",
+      "file": "dungeon/wall_mossy.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "wall_brick",
+      "category": "wall",
+      "seamless": true,
+      "blurb": "Red brick, for a different biome.",
+      "file": "dungeon/wall_brick.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "wall_rune",
+      "category": "wall",
+      "seamless": false,
+      "blurb": "Marks a secret or a boss door.",
+      "file": "dungeon/wall_rune.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "door_closed",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Blocks a room exit.",
+      "file": "dungeon/door_closed.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "door_open",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Passable exit.",
+      "file": "dungeon/door_open.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "portcullis",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Gate; opens on a trigger.",
+      "file": "dungeon/portcullis.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "stairs_down",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Descend to the next floor.",
+      "file": "dungeon/stairs_down.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "stairs_up",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Return to the previous floor.",
+      "file": "dungeon/stairs_up.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "pillar",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Room decoration and cover.",
+      "file": "dungeon/pillar.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "arch",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Corridor entrance.",
+      "file": "dungeon/arch.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "pit",
+      "category": "structure",
+      "seamless": false,
+      "blurb": "Impassable hole.",
+      "file": "dungeon/pit.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "chest_closed",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Unopened loot.",
+      "file": "dungeon/chest_closed.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "chest_open",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Looted state for a chest.",
+      "file": "dungeon/chest_open.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "barrel",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Breakable container.",
+      "file": "dungeon/barrel.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "crate",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Breakable container.",
+      "file": "dungeon/crate.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "urn",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Breakable container.",
+      "file": "dungeon/urn.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "torch_wall",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Wall light source.",
+      "file": "dungeon/torch_wall.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "brazier",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Floor light source.",
+      "file": "dungeon/brazier.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "bones",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Scatter decor.",
+      "file": "dungeon/bones.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "skull_pile",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Scatter decor; crypt rooms.",
+      "file": "dungeon/skull_pile.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "cobweb",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Corner overlay for stale rooms.",
+      "file": "dungeon/cobweb.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "spike_trap",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Damages anything that steps on it.",
+      "file": "dungeon/spike_trap.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "pressure_plate",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Trap and door trigger.",
+      "file": "dungeon/pressure_plate.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "altar",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Shrine; buffs or curses.",
+      "file": "dungeon/altar.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "rubble",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Scatter decor.",
+      "file": "dungeon/rubble.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "banner",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Wall decor; marks a faction.",
+      "file": "dungeon/banner.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "chain",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Hanging wall decor.",
+      "file": "dungeon/chain.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "mushrooms",
+      "category": "prop",
+      "seamless": false,
+      "blurb": "Cave decor; harvestable.",
+      "file": "dungeon/mushrooms.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "key_item",
+      "category": "pickup",
+      "seamless": false,
+      "blurb": "Opens a locked door.",
+      "file": "dungeon/key_item.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "coin_pile",
+      "category": "pickup",
+      "seamless": false,
+      "blurb": "Currency drop.",
+      "file": "dungeon/coin_pile.png",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "potion",
+      "category": "pickup",
+      "seamless": false,
+      "blurb": "Consumable drop.",
+      "file": "dungeon/potion.png",
+      "size": [
+        16,
+        16
+      ]
+    }
+  ],
+  "fx": [
+    {
+      "name": "fx_slash",
+      "blurb": "A melee crescent. Pair with any bladed weapon.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_slash_strip.png",
+      "dir": "fx/fx_slash",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_impact",
+      "blurb": "Generic blunt hit spark.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_impact_strip.png",
+      "dir": "fx/fx_impact",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_pierce",
+      "blurb": "Arrow or thrust landing.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_pierce_strip.png",
+      "dir": "fx/fx_pierce",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_blood",
+      "blurb": "Damage splatter for organic enemies.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_blood_strip.png",
+      "dir": "fx/fx_blood",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_explosion",
+      "blurb": "Bomb or big finisher.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_explosion_strip.png",
+      "dir": "fx/fx_explosion",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_fire",
+      "blurb": "Burning column; also a status loop.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_fire_strip.png",
+      "dir": "fx/fx_fire",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_ice",
+      "blurb": "Frost burst; pairs with a slow.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_ice_strip.png",
+      "dir": "fx/fx_ice",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_lightning",
+      "blurb": "Chain-lightning strike from above.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_lightning_strip.png",
+      "dir": "fx/fx_lightning",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_poison",
+      "blurb": "Rising toxic cloud.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_poison_strip.png",
+      "dir": "fx/fx_poison",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_arcane",
+      "blurb": "Neutral magic burst.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_arcane_strip.png",
+      "dir": "fx/fx_arcane",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_heal",
+      "blurb": "Restorative motes rising.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_heal_strip.png",
+      "dir": "fx/fx_heal",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_buff",
+      "blurb": "Rising ring for a positive status.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_buff_strip.png",
+      "dir": "fx/fx_buff",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_debuff",
+      "blurb": "Falling ring for a negative status.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_debuff_strip.png",
+      "dir": "fx/fx_debuff",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_stun",
+      "blurb": "Orbiting stars over a stunned actor.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_stun_strip.png",
+      "dir": "fx/fx_stun",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_shockwave",
+      "blurb": "Ground slam ripple.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_shockwave_strip.png",
+      "dir": "fx/fx_shockwave",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "fx_smoke",
+      "blurb": "Dissipating puff; use for retreats.",
+      "frames": 6,
+      "fps": 14,
+      "strip": "fx/fx_smoke_strip.png",
+      "dir": "fx/fx_smoke",
+      "size": [
+        32,
+        32
+      ]
+    }
+  ],
+  "atlases": {
+    "heroes_idle": {
+      "path": "heroes_idle.png",
+      "cols": 10,
+      "rows": 1,
+      "cell_w": 32,
+      "cell_h": 40,
+      "count": 10,
+      "order": [
+        "warrior",
+        "paladin",
+        "ranger",
+        "rogue",
+        "mage",
+        "cleric",
+        "berserker",
+        "monk",
+        "necromancer",
+        "templar"
+      ]
+    },
+    "enemies_idle": {
+      "path": "enemies_idle.png",
+      "cols": 10,
+      "rows": 3,
+      "cell_w": 32,
+      "cell_h": 40,
+      "count": 29,
+      "order": [
+        "goblin_grunt",
+        "goblin_archer",
+        "goblin_shaman",
+        "kobold",
+        "giant_rat",
+        "bat",
+        "slime",
+        "skeleton",
+        "skeleton_archer",
+        "zombie",
+        "ghoul",
+        "bandit",
+        "cultist",
+        "orc_brute",
+        "dire_wolf",
+        "giant_spider",
+        "scorpion",
+        "harpy",
+        "imp",
+        "gargoyle",
+        "treant",
+        "mimic",
+        "orc_warchief",
+        "skeleton_knight",
+        "wraith",
+        "minotaur",
+        "demon_lord",
+        "lich",
+        "beholder"
+      ]
+    },
+    "heroes_all": {
+      "path": "heroes_all.png",
+      "cols": 25,
+      "rows": 10,
+      "cell_w": 32,
+      "cell_h": 40,
+      "count": 250,
+      "order": [
+        "warrior:idle:0",
+        "warrior:idle:1",
+        "warrior:idle:2",
+        "warrior:idle:3",
+        "warrior:walk:0",
+        "warrior:walk:1",
+        "warrior:walk:2",
+        "warrior:walk:3",
+        "warrior:walk:4",
+        "warrior:walk:5",
+        "warrior:attack:0",
+        "warrior:attack:1",
+        "warrior:attack:2",
+        "warrior:attack:3",
+        "warrior:attack:4",
+        "warrior:attack:5",
+        "warrior:hurt:0",
+        "warrior:hurt:1",
+        "warrior:hurt:2",
+        "warrior:death:0",
+        "warrior:death:1",
+        "warrior:death:2",
+        "warrior:death:3",
+        "warrior:death:4",
+        "warrior:death:5",
+        "paladin:idle:0",
+        "paladin:idle:1",
+        "paladin:idle:2",
+        "paladin:idle:3",
+        "paladin:walk:0",
+        "paladin:walk:1",
+        "paladin:walk:2",
+        "paladin:walk:3",
+        "paladin:walk:4",
+        "paladin:walk:5",
+        "paladin:attack:0",
+        "paladin:attack:1",
+        "paladin:attack:2",
+        "paladin:attack:3",
+        "paladin:attack:4",
+        "paladin:attack:5",
+        "paladin:hurt:0",
+        "paladin:hurt:1",
+        "paladin:hurt:2",
+        "paladin:death:0",
+        "paladin:death:1",
+        "paladin:death:2",
+        "paladin:death:3",
+        "paladin:death:4",
+        "paladin:death:5",
+        "ranger:idle:0",
+        "ranger:idle:1",
+        "ranger:idle:2",
+        "ranger:idle:3",
+        "ranger:walk:0",
+        "ranger:walk:1",
+        "ranger:walk:2",
+        "ranger:walk:3",
+        "ranger:walk:4",
+        "ranger:walk:5",
+        "ranger:attack:0",
+        "ranger:attack:1",
+        "ranger:attack:2",
+        "ranger:attack:3",
+        "ranger:attack:4",
+        "ranger:attack:5",
+        "ranger:hurt:0",
+        "ranger:hurt:1",
+        "ranger:hurt:2",
+        "ranger:death:0",
+        "ranger:death:1",
+        "ranger:death:2",
+        "ranger:death:3",
+        "ranger:death:4",
+        "ranger:death:5",
+        "rogue:idle:0",
+        "rogue:idle:1",
+        "rogue:idle:2",
+        "rogue:idle:3",
+        "rogue:walk:0",
+        "rogue:walk:1",
+        "rogue:walk:2",
+        "rogue:walk:3",
+        "rogue:walk:4",
+        "rogue:walk:5",
+        "rogue:attack:0",
+        "rogue:attack:1",
+        "rogue:attack:2",
+        "rogue:attack:3",
+        "rogue:attack:4",
+        "rogue:attack:5",
+        "rogue:hurt:0",
+        "rogue:hurt:1",
+        "rogue:hurt:2",
+        "rogue:death:0",
+        "rogue:death:1",
+        "rogue:death:2",
+        "rogue:death:3",
+        "rogue:death:4",
+        "rogue:death:5",
+        "mage:idle:0",
+        "mage:idle:1",
+        "mage:idle:2",
+        "mage:idle:3",
+        "mage:walk:0",
+        "mage:walk:1",
+        "mage:walk:2",
+        "mage:walk:3",
+        "mage:walk:4",
+        "mage:walk:5",
+        "mage:attack:0",
+        "mage:attack:1",
+        "mage:attack:2",
+        "mage:attack:3",
+        "mage:attack:4",
+        "mage:attack:5",
+        "mage:hurt:0",
+        "mage:hurt:1",
+        "mage:hurt:2",
+        "mage:death:0",
+        "mage:death:1",
+        "mage:death:2",
+        "mage:death:3",
+        "mage:death:4",
+        "mage:death:5",
+        "cleric:idle:0",
+        "cleric:idle:1",
+        "cleric:idle:2",
+        "cleric:idle:3",
+        "cleric:walk:0",
+        "cleric:walk:1",
+        "cleric:walk:2",
+        "cleric:walk:3",
+        "cleric:walk:4",
+        "cleric:walk:5",
+        "cleric:attack:0",
+        "cleric:attack:1",
+        "cleric:attack:2",
+        "cleric:attack:3",
+        "cleric:attack:4",
+        "cleric:attack:5",
+        "cleric:hurt:0",
+        "cleric:hurt:1",
+        "cleric:hurt:2",
+        "cleric:death:0",
+        "cleric:death:1",
+        "cleric:death:2",
+        "cleric:death:3",
+        "cleric:death:4",
+        "cleric:death:5",
+        "berserker:idle:0",
+        "berserker:idle:1",
+        "berserker:idle:2",
+        "berserker:idle:3",
+        "berserker:walk:0",
+        "berserker:walk:1",
+        "berserker:walk:2",
+        "berserker:walk:3",
+        "berserker:walk:4",
+        "berserker:walk:5",
+        "berserker:attack:0",
+        "berserker:attack:1",
+        "berserker:attack:2",
+        "berserker:attack:3",
+        "berserker:attack:4",
+        "berserker:attack:5",
+        "berserker:hurt:0",
+        "berserker:hurt:1",
+        "berserker:hurt:2",
+        "berserker:death:0",
+        "berserker:death:1",
+        "berserker:death:2",
+        "berserker:death:3",
+        "berserker:death:4",
+        "berserker:death:5",
+        "monk:idle:0",
+        "monk:idle:1",
+        "monk:idle:2",
+        "monk:idle:3",
+        "monk:walk:0",
+        "monk:walk:1",
+        "monk:walk:2",
+        "monk:walk:3",
+        "monk:walk:4",
+        "monk:walk:5",
+        "monk:attack:0",
+        "monk:attack:1",
+        "monk:attack:2",
+        "monk:attack:3",
+        "monk:attack:4",
+        "monk:attack:5",
+        "monk:hurt:0",
+        "monk:hurt:1",
+        "monk:hurt:2",
+        "monk:death:0",
+        "monk:death:1",
+        "monk:death:2",
+        "monk:death:3",
+        "monk:death:4",
+        "monk:death:5",
+        "necromancer:idle:0",
+        "necromancer:idle:1",
+        "necromancer:idle:2",
+        "necromancer:idle:3",
+        "necromancer:walk:0",
+        "necromancer:walk:1",
+        "necromancer:walk:2",
+        "necromancer:walk:3",
+        "necromancer:walk:4",
+        "necromancer:walk:5",
+        "necromancer:attack:0",
+        "necromancer:attack:1",
+        "necromancer:attack:2",
+        "necromancer:attack:3",
+        "necromancer:attack:4",
+        "necromancer:attack:5",
+        "necromancer:hurt:0",
+        "necromancer:hurt:1",
+        "necromancer:hurt:2",
+        "necromancer:death:0",
+        "necromancer:death:1",
+        "necromancer:death:2",
+        "necromancer:death:3",
+        "necromancer:death:4",
+        "necromancer:death:5",
+        "templar:idle:0",
+        "templar:idle:1",
+        "templar:idle:2",
+        "templar:idle:3",
+        "templar:walk:0",
+        "templar:walk:1",
+        "templar:walk:2",
+        "templar:walk:3",
+        "templar:walk:4",
+        "templar:walk:5",
+        "templar:attack:0",
+        "templar:attack:1",
+        "templar:attack:2",
+        "templar:attack:3",
+        "templar:attack:4",
+        "templar:attack:5",
+        "templar:hurt:0",
+        "templar:hurt:1",
+        "templar:hurt:2",
+        "templar:death:0",
+        "templar:death:1",
+        "templar:death:2",
+        "templar:death:3",
+        "templar:death:4",
+        "templar:death:5"
+      ]
+    },
+    "enemies_all": {
+      "path": "enemies_all.png",
+      "cols": 25,
+      "rows": 29,
+      "cell_w": 32,
+      "cell_h": 40,
+      "count": 725,
+      "order": [
+        "goblin_grunt:idle:0",
+        "goblin_grunt:idle:1",
+        "goblin_grunt:idle:2",
+        "goblin_grunt:idle:3",
+        "goblin_grunt:walk:0",
+        "goblin_grunt:walk:1",
+        "goblin_grunt:walk:2",
+        "goblin_grunt:walk:3",
+        "goblin_grunt:walk:4",
+        "goblin_grunt:walk:5",
+        "goblin_grunt:attack:0",
+        "goblin_grunt:attack:1",
+        "goblin_grunt:attack:2",
+        "goblin_grunt:attack:3",
+        "goblin_grunt:attack:4",
+        "goblin_grunt:attack:5",
+        "goblin_grunt:hurt:0",
+        "goblin_grunt:hurt:1",
+        "goblin_grunt:hurt:2",
+        "goblin_grunt:death:0",
+        "goblin_grunt:death:1",
+        "goblin_grunt:death:2",
+        "goblin_grunt:death:3",
+        "goblin_grunt:death:4",
+        "goblin_grunt:death:5",
+        "goblin_archer:idle:0",
+        "goblin_archer:idle:1",
+        "goblin_archer:idle:2",
+        "goblin_archer:idle:3",
+        "goblin_archer:walk:0",
+        "goblin_archer:walk:1",
+        "goblin_archer:walk:2",
+        "goblin_archer:walk:3",
+        "goblin_archer:walk:4",
+        "goblin_archer:walk:5",
+        "goblin_archer:attack:0",
+        "goblin_archer:attack:1",
+        "goblin_archer:attack:2",
+        "goblin_archer:attack:3",
+        "goblin_archer:attack:4",
+        "goblin_archer:attack:5",
+        "goblin_archer:hurt:0",
+        "goblin_archer:hurt:1",
+        "goblin_archer:hurt:2",
+        "goblin_archer:death:0",
+        "goblin_archer:death:1",
+        "goblin_archer:death:2",
+        "goblin_archer:death:3",
+        "goblin_archer:death:4",
+        "goblin_archer:death:5",
+        "goblin_shaman:idle:0",
+        "goblin_shaman:idle:1",
+        "goblin_shaman:idle:2",
+        "goblin_shaman:idle:3",
+        "goblin_shaman:walk:0",
+        "goblin_shaman:walk:1",
+        "goblin_shaman:walk:2",
+        "goblin_shaman:walk:3",
+        "goblin_shaman:walk:4",
+        "goblin_shaman:walk:5",
+        "goblin_shaman:attack:0",
+        "goblin_shaman:attack:1",
+        "goblin_shaman:attack:2",
+        "goblin_shaman:attack:3",
+        "goblin_shaman:attack:4",
+        "goblin_shaman:attack:5",
+        "goblin_shaman:hurt:0",
+        "goblin_shaman:hurt:1",
+        "goblin_shaman:hurt:2",
+        "goblin_shaman:death:0",
+        "goblin_shaman:death:1",
+        "goblin_shaman:death:2",
+        "goblin_shaman:death:3",
+        "goblin_shaman:death:4",
+        "goblin_shaman:death:5",
+        "kobold:idle:0",
+        "kobold:idle:1",
+        "kobold:idle:2",
+        "kobold:idle:3",
+        "kobold:walk:0",
+        "kobold:walk:1",
+        "kobold:walk:2",
+        "kobold:walk:3",
+        "kobold:walk:4",
+        "kobold:walk:5",
+        "kobold:attack:0",
+        "kobold:attack:1",
+        "kobold:attack:2",
+        "kobold:attack:3",
+        "kobold:attack:4",
+        "kobold:attack:5",
+        "kobold:hurt:0",
+        "kobold:hurt:1",
+        "kobold:hurt:2",
+        "kobold:death:0",
+        "kobold:death:1",
+        "kobold:death:2",
+        "kobold:death:3",
+        "kobold:death:4",
+        "kobold:death:5",
+        "giant_rat:idle:0",
+        "giant_rat:idle:1",
+        "giant_rat:idle:2",
+        "giant_rat:idle:3",
+        "giant_rat:walk:0",
+        "giant_rat:walk:1",
+        "giant_rat:walk:2",
+        "giant_rat:walk:3",
+        "giant_rat:walk:4",
+        "giant_rat:walk:5",
+        "giant_rat:attack:0",
+        "giant_rat:attack:1",
+        "giant_rat:attack:2",
+        "giant_rat:attack:3",
+        "giant_rat:attack:4",
+        "giant_rat:attack:5",
+        "giant_rat:hurt:0",
+        "giant_rat:hurt:1",
+        "giant_rat:hurt:2",
+        "giant_rat:death:0",
+        "giant_rat:death:1",
+        "giant_rat:death:2",
+        "giant_rat:death:3",
+        "giant_rat:death:4",
+        "giant_rat:death:5",
+        "bat:idle:0",
+        "bat:idle:1",
+        "bat:idle:2",
+        "bat:idle:3",
+        "bat:walk:0",
+        "bat:walk:1",
+        "bat:walk:2",
+        "bat:walk:3",
+        "bat:walk:4",
+        "bat:walk:5",
+        "bat:attack:0",
+        "bat:attack:1",
+        "bat:attack:2",
+        "bat:attack:3",
+        "bat:attack:4",
+        "bat:attack:5",
+        "bat:hurt:0",
+        "bat:hurt:1",
+        "bat:hurt:2",
+        "bat:death:0",
+        "bat:death:1",
+        "bat:death:2",
+        "bat:death:3",
+        "bat:death:4",
+        "bat:death:5",
+        "slime:idle:0",
+        "slime:idle:1",
+        "slime:idle:2",
+        "slime:idle:3",
+        "slime:walk:0",
+        "slime:walk:1",
+        "slime:walk:2",
+        "slime:walk:3",
+        "slime:walk:4",
+        "slime:walk:5",
+        "slime:attack:0",
+        "slime:attack:1",
+        "slime:attack:2",
+        "slime:attack:3",
+        "slime:attack:4",
+        "slime:attack:5",
+        "slime:hurt:0",
+        "slime:hurt:1",
+        "slime:hurt:2",
+        "slime:death:0",
+        "slime:death:1",
+        "slime:death:2",
+        "slime:death:3",
+        "slime:death:4",
+        "slime:death:5",
+        "skeleton:idle:0",
+        "skeleton:idle:1",
+        "skeleton:idle:2",
+        "skeleton:idle:3",
+        "skeleton:walk:0",
+        "skeleton:walk:1",
+        "skeleton:walk:2",
+        "skeleton:walk:3",
+        "skeleton:walk:4",
+        "skeleton:walk:5",
+        "skeleton:attack:0",
+        "skeleton:attack:1",
+        "skeleton:attack:2",
+        "skeleton:attack:3",
+        "skeleton:attack:4",
+        "skeleton:attack:5",
+        "skeleton:hurt:0",
+        "skeleton:hurt:1",
+        "skeleton:hurt:2",
+        "skeleton:death:0",
+        "skeleton:death:1",
+        "skeleton:death:2",
+        "skeleton:death:3",
+        "skeleton:death:4",
+        "skeleton:death:5",
+        "skeleton_archer:idle:0",
+        "skeleton_archer:idle:1",
+        "skeleton_archer:idle:2",
+        "skeleton_archer:idle:3",
+        "skeleton_archer:walk:0",
+        "skeleton_archer:walk:1",
+        "skeleton_archer:walk:2",
+        "skeleton_archer:walk:3",
+        "skeleton_archer:walk:4",
+        "skeleton_archer:walk:5",
+        "skeleton_archer:attack:0",
+        "skeleton_archer:attack:1",
+        "skeleton_archer:attack:2",
+        "skeleton_archer:attack:3",
+        "skeleton_archer:attack:4",
+        "skeleton_archer:attack:5",
+        "skeleton_archer:hurt:0",
+        "skeleton_archer:hurt:1",
+        "skeleton_archer:hurt:2",
+        "skeleton_archer:death:0",
+        "skeleton_archer:death:1",
+        "skeleton_archer:death:2",
+        "skeleton_archer:death:3",
+        "skeleton_archer:death:4",
+        "skeleton_archer:death:5",
+        "zombie:idle:0",
+        "zombie:idle:1",
+        "zombie:idle:2",
+        "zombie:idle:3",
+        "zombie:walk:0",
+        "zombie:walk:1",
+        "zombie:walk:2",
+        "zombie:walk:3",
+        "zombie:walk:4",
+        "zombie:walk:5",
+        "zombie:attack:0",
+        "zombie:attack:1",
+        "zombie:attack:2",
+        "zombie:attack:3",
+        "zombie:attack:4",
+        "zombie:attack:5",
+        "zombie:hurt:0",
+        "zombie:hurt:1",
+        "zombie:hurt:2",
+        "zombie:death:0",
+        "zombie:death:1",
+        "zombie:death:2",
+        "zombie:death:3",
+        "zombie:death:4",
+        "zombie:death:5",
+        "ghoul:idle:0",
+        "ghoul:idle:1",
+        "ghoul:idle:2",
+        "ghoul:idle:3",
+        "ghoul:walk:0",
+        "ghoul:walk:1",
+        "ghoul:walk:2",
+        "ghoul:walk:3",
+        "ghoul:walk:4",
+        "ghoul:walk:5",
+        "ghoul:attack:0",
+        "ghoul:attack:1",
+        "ghoul:attack:2",
+        "ghoul:attack:3",
+        "ghoul:attack:4",
+        "ghoul:attack:5",
+        "ghoul:hurt:0",
+        "ghoul:hurt:1",
+        "ghoul:hurt:2",
+        "ghoul:death:0",
+        "ghoul:death:1",
+        "ghoul:death:2",
+        "ghoul:death:3",
+        "ghoul:death:4",
+        "ghoul:death:5",
+        "bandit:idle:0",
+        "bandit:idle:1",
+        "bandit:idle:2",
+        "bandit:idle:3",
+        "bandit:walk:0",
+        "bandit:walk:1",
+        "bandit:walk:2",
+        "bandit:walk:3",
+        "bandit:walk:4",
+        "bandit:walk:5",
+        "bandit:attack:0",
+        "bandit:attack:1",
+        "bandit:attack:2",
+        "bandit:attack:3",
+        "bandit:attack:4",
+        "bandit:attack:5",
+        "bandit:hurt:0",
+        "bandit:hurt:1",
+        "bandit:hurt:2",
+        "bandit:death:0",
+        "bandit:death:1",
+        "bandit:death:2",
+        "bandit:death:3",
+        "bandit:death:4",
+        "bandit:death:5",
+        "cultist:idle:0",
+        "cultist:idle:1",
+        "cultist:idle:2",
+        "cultist:idle:3",
+        "cultist:walk:0",
+        "cultist:walk:1",
+        "cultist:walk:2",
+        "cultist:walk:3",
+        "cultist:walk:4",
+        "cultist:walk:5",
+        "cultist:attack:0",
+        "cultist:attack:1",
+        "cultist:attack:2",
+        "cultist:attack:3",
+        "cultist:attack:4",
+        "cultist:attack:5",
+        "cultist:hurt:0",
+        "cultist:hurt:1",
+        "cultist:hurt:2",
+        "cultist:death:0",
+        "cultist:death:1",
+        "cultist:death:2",
+        "cultist:death:3",
+        "cultist:death:4",
+        "cultist:death:5",
+        "orc_brute:idle:0",
+        "orc_brute:idle:1",
+        "orc_brute:idle:2",
+        "orc_brute:idle:3",
+        "orc_brute:walk:0",
+        "orc_brute:walk:1",
+        "orc_brute:walk:2",
+        "orc_brute:walk:3",
+        "orc_brute:walk:4",
+        "orc_brute:walk:5",
+        "orc_brute:attack:0",
+        "orc_brute:attack:1",
+        "orc_brute:attack:2",
+        "orc_brute:attack:3",
+        "orc_brute:attack:4",
+        "orc_brute:attack:5",
+        "orc_brute:hurt:0",
+        "orc_brute:hurt:1",
+        "orc_brute:hurt:2",
+        "orc_brute:death:0",
+        "orc_brute:death:1",
+        "orc_brute:death:2",
+        "orc_brute:death:3",
+        "orc_brute:death:4",
+        "orc_brute:death:5",
+        "dire_wolf:idle:0",
+        "dire_wolf:idle:1",
+        "dire_wolf:idle:2",
+        "dire_wolf:idle:3",
+        "dire_wolf:walk:0",
+        "dire_wolf:walk:1",
+        "dire_wolf:walk:2",
+        "dire_wolf:walk:3",
+        "dire_wolf:walk:4",
+        "dire_wolf:walk:5",
+        "dire_wolf:attack:0",
+        "dire_wolf:attack:1",
+        "dire_wolf:attack:2",
+        "dire_wolf:attack:3",
+        "dire_wolf:attack:4",
+        "dire_wolf:attack:5",
+        "dire_wolf:hurt:0",
+        "dire_wolf:hurt:1",
+        "dire_wolf:hurt:2",
+        "dire_wolf:death:0",
+        "dire_wolf:death:1",
+        "dire_wolf:death:2",
+        "dire_wolf:death:3",
+        "dire_wolf:death:4",
+        "dire_wolf:death:5",
+        "giant_spider:idle:0",
+        "giant_spider:idle:1",
+        "giant_spider:idle:2",
+        "giant_spider:idle:3",
+        "giant_spider:walk:0",
+        "giant_spider:walk:1",
+        "giant_spider:walk:2",
+        "giant_spider:walk:3",
+        "giant_spider:walk:4",
+        "giant_spider:walk:5",
+        "giant_spider:attack:0",
+        "giant_spider:attack:1",
+        "giant_spider:attack:2",
+        "giant_spider:attack:3",
+        "giant_spider:attack:4",
+        "giant_spider:attack:5",
+        "giant_spider:hurt:0",
+        "giant_spider:hurt:1",
+        "giant_spider:hurt:2",
+        "giant_spider:death:0",
+        "giant_spider:death:1",
+        "giant_spider:death:2",
+        "giant_spider:death:3",
+        "giant_spider:death:4",
+        "giant_spider:death:5",
+        "scorpion:idle:0",
+        "scorpion:idle:1",
+        "scorpion:idle:2",
+        "scorpion:idle:3",
+        "scorpion:walk:0",
+        "scorpion:walk:1",
+        "scorpion:walk:2",
+        "scorpion:walk:3",
+        "scorpion:walk:4",
+        "scorpion:walk:5",
+        "scorpion:attack:0",
+        "scorpion:attack:1",
+        "scorpion:attack:2",
+        "scorpion:attack:3",
+        "scorpion:attack:4",
+        "scorpion:attack:5",
+        "scorpion:hurt:0",
+        "scorpion:hurt:1",
+        "scorpion:hurt:2",
+        "scorpion:death:0",
+        "scorpion:death:1",
+        "scorpion:death:2",
+        "scorpion:death:3",
+        "scorpion:death:4",
+        "scorpion:death:5",
+        "harpy:idle:0",
+        "harpy:idle:1",
+        "harpy:idle:2",
+        "harpy:idle:3",
+        "harpy:walk:0",
+        "harpy:walk:1",
+        "harpy:walk:2",
+        "harpy:walk:3",
+        "harpy:walk:4",
+        "harpy:walk:5",
+        "harpy:attack:0",
+        "harpy:attack:1",
+        "harpy:attack:2",
+        "harpy:attack:3",
+        "harpy:attack:4",
+        "harpy:attack:5",
+        "harpy:hurt:0",
+        "harpy:hurt:1",
+        "harpy:hurt:2",
+        "harpy:death:0",
+        "harpy:death:1",
+        "harpy:death:2",
+        "harpy:death:3",
+        "harpy:death:4",
+        "harpy:death:5",
+        "imp:idle:0",
+        "imp:idle:1",
+        "imp:idle:2",
+        "imp:idle:3",
+        "imp:walk:0",
+        "imp:walk:1",
+        "imp:walk:2",
+        "imp:walk:3",
+        "imp:walk:4",
+        "imp:walk:5",
+        "imp:attack:0",
+        "imp:attack:1",
+        "imp:attack:2",
+        "imp:attack:3",
+        "imp:attack:4",
+        "imp:attack:5",
+        "imp:hurt:0",
+        "imp:hurt:1",
+        "imp:hurt:2",
+        "imp:death:0",
+        "imp:death:1",
+        "imp:death:2",
+        "imp:death:3",
+        "imp:death:4",
+        "imp:death:5",
+        "gargoyle:idle:0",
+        "gargoyle:idle:1",
+        "gargoyle:idle:2",
+        "gargoyle:idle:3",
+        "gargoyle:walk:0",
+        "gargoyle:walk:1",
+        "gargoyle:walk:2",
+        "gargoyle:walk:3",
+        "gargoyle:walk:4",
+        "gargoyle:walk:5",
+        "gargoyle:attack:0",
+        "gargoyle:attack:1",
+        "gargoyle:attack:2",
+        "gargoyle:attack:3",
+        "gargoyle:attack:4",
+        "gargoyle:attack:5",
+        "gargoyle:hurt:0",
+        "gargoyle:hurt:1",
+        "gargoyle:hurt:2",
+        "gargoyle:death:0",
+        "gargoyle:death:1",
+        "gargoyle:death:2",
+        "gargoyle:death:3",
+        "gargoyle:death:4",
+        "gargoyle:death:5",
+        "treant:idle:0",
+        "treant:idle:1",
+        "treant:idle:2",
+        "treant:idle:3",
+        "treant:walk:0",
+        "treant:walk:1",
+        "treant:walk:2",
+        "treant:walk:3",
+        "treant:walk:4",
+        "treant:walk:5",
+        "treant:attack:0",
+        "treant:attack:1",
+        "treant:attack:2",
+        "treant:attack:3",
+        "treant:attack:4",
+        "treant:attack:5",
+        "treant:hurt:0",
+        "treant:hurt:1",
+        "treant:hurt:2",
+        "treant:death:0",
+        "treant:death:1",
+        "treant:death:2",
+        "treant:death:3",
+        "treant:death:4",
+        "treant:death:5",
+        "mimic:idle:0",
+        "mimic:idle:1",
+        "mimic:idle:2",
+        "mimic:idle:3",
+        "mimic:walk:0",
+        "mimic:walk:1",
+        "mimic:walk:2",
+        "mimic:walk:3",
+        "mimic:walk:4",
+        "mimic:walk:5",
+        "mimic:attack:0",
+        "mimic:attack:1",
+        "mimic:attack:2",
+        "mimic:attack:3",
+        "mimic:attack:4",
+        "mimic:attack:5",
+        "mimic:hurt:0",
+        "mimic:hurt:1",
+        "mimic:hurt:2",
+        "mimic:death:0",
+        "mimic:death:1",
+        "mimic:death:2",
+        "mimic:death:3",
+        "mimic:death:4",
+        "mimic:death:5",
+        "orc_warchief:idle:0",
+        "orc_warchief:idle:1",
+        "orc_warchief:idle:2",
+        "orc_warchief:idle:3",
+        "orc_warchief:walk:0",
+        "orc_warchief:walk:1",
+        "orc_warchief:walk:2",
+        "orc_warchief:walk:3",
+        "orc_warchief:walk:4",
+        "orc_warchief:walk:5",
+        "orc_warchief:attack:0",
+        "orc_warchief:attack:1",
+        "orc_warchief:attack:2",
+        "orc_warchief:attack:3",
+        "orc_warchief:attack:4",
+        "orc_warchief:attack:5",
+        "orc_warchief:hurt:0",
+        "orc_warchief:hurt:1",
+        "orc_warchief:hurt:2",
+        "orc_warchief:death:0",
+        "orc_warchief:death:1",
+        "orc_warchief:death:2",
+        "orc_warchief:death:3",
+        "orc_warchief:death:4",
+        "orc_warchief:death:5",
+        "skeleton_knight:idle:0",
+        "skeleton_knight:idle:1",
+        "skeleton_knight:idle:2",
+        "skeleton_knight:idle:3",
+        "skeleton_knight:walk:0",
+        "skeleton_knight:walk:1",
+        "skeleton_knight:walk:2",
+        "skeleton_knight:walk:3",
+        "skeleton_knight:walk:4",
+        "skeleton_knight:walk:5",
+        "skeleton_knight:attack:0",
+        "skeleton_knight:attack:1",
+        "skeleton_knight:attack:2",
+        "skeleton_knight:attack:3",
+        "skeleton_knight:attack:4",
+        "skeleton_knight:attack:5",
+        "skeleton_knight:hurt:0",
+        "skeleton_knight:hurt:1",
+        "skeleton_knight:hurt:2",
+        "skeleton_knight:death:0",
+        "skeleton_knight:death:1",
+        "skeleton_knight:death:2",
+        "skeleton_knight:death:3",
+        "skeleton_knight:death:4",
+        "skeleton_knight:death:5",
+        "wraith:idle:0",
+        "wraith:idle:1",
+        "wraith:idle:2",
+        "wraith:idle:3",
+        "wraith:walk:0",
+        "wraith:walk:1",
+        "wraith:walk:2",
+        "wraith:walk:3",
+        "wraith:walk:4",
+        "wraith:walk:5",
+        "wraith:attack:0",
+        "wraith:attack:1",
+        "wraith:attack:2",
+        "wraith:attack:3",
+        "wraith:attack:4",
+        "wraith:attack:5",
+        "wraith:hurt:0",
+        "wraith:hurt:1",
+        "wraith:hurt:2",
+        "wraith:death:0",
+        "wraith:death:1",
+        "wraith:death:2",
+        "wraith:death:3",
+        "wraith:death:4",
+        "wraith:death:5",
+        "minotaur:idle:0",
+        "minotaur:idle:1",
+        "minotaur:idle:2",
+        "minotaur:idle:3",
+        "minotaur:walk:0",
+        "minotaur:walk:1",
+        "minotaur:walk:2",
+        "minotaur:walk:3",
+        "minotaur:walk:4",
+        "minotaur:walk:5",
+        "minotaur:attack:0",
+        "minotaur:attack:1",
+        "minotaur:attack:2",
+        "minotaur:attack:3",
+        "minotaur:attack:4",
+        "minotaur:attack:5",
+        "minotaur:hurt:0",
+        "minotaur:hurt:1",
+        "minotaur:hurt:2",
+        "minotaur:death:0",
+        "minotaur:death:1",
+        "minotaur:death:2",
+        "minotaur:death:3",
+        "minotaur:death:4",
+        "minotaur:death:5",
+        "demon_lord:idle:0",
+        "demon_lord:idle:1",
+        "demon_lord:idle:2",
+        "demon_lord:idle:3",
+        "demon_lord:walk:0",
+        "demon_lord:walk:1",
+        "demon_lord:walk:2",
+        "demon_lord:walk:3",
+        "demon_lord:walk:4",
+        "demon_lord:walk:5",
+        "demon_lord:attack:0",
+        "demon_lord:attack:1",
+        "demon_lord:attack:2",
+        "demon_lord:attack:3",
+        "demon_lord:attack:4",
+        "demon_lord:attack:5",
+        "demon_lord:hurt:0",
+        "demon_lord:hurt:1",
+        "demon_lord:hurt:2",
+        "demon_lord:death:0",
+        "demon_lord:death:1",
+        "demon_lord:death:2",
+        "demon_lord:death:3",
+        "demon_lord:death:4",
+        "demon_lord:death:5",
+        "lich:idle:0",
+        "lich:idle:1",
+        "lich:idle:2",
+        "lich:idle:3",
+        "lich:walk:0",
+        "lich:walk:1",
+        "lich:walk:2",
+        "lich:walk:3",
+        "lich:walk:4",
+        "lich:walk:5",
+        "lich:attack:0",
+        "lich:attack:1",
+        "lich:attack:2",
+        "lich:attack:3",
+        "lich:attack:4",
+        "lich:attack:5",
+        "lich:hurt:0",
+        "lich:hurt:1",
+        "lich:hurt:2",
+        "lich:death:0",
+        "lich:death:1",
+        "lich:death:2",
+        "lich:death:3",
+        "lich:death:4",
+        "lich:death:5",
+        "beholder:idle:0",
+        "beholder:idle:1",
+        "beholder:idle:2",
+        "beholder:idle:3",
+        "beholder:walk:0",
+        "beholder:walk:1",
+        "beholder:walk:2",
+        "beholder:walk:3",
+        "beholder:walk:4",
+        "beholder:walk:5",
+        "beholder:attack:0",
+        "beholder:attack:1",
+        "beholder:attack:2",
+        "beholder:attack:3",
+        "beholder:attack:4",
+        "beholder:attack:5",
+        "beholder:hurt:0",
+        "beholder:hurt:1",
+        "beholder:hurt:2",
+        "beholder:death:0",
+        "beholder:death:1",
+        "beholder:death:2",
+        "beholder:death:3",
+        "beholder:death:4",
+        "beholder:death:5"
+      ]
+    },
+    "weapons": {
+      "path": "weapons.png",
+      "cols": 12,
+      "rows": 4,
+      "cell_w": 24,
+      "cell_h": 24,
+      "count": 47,
+      "order": [
+        "rusty_shortsword",
+        "iron_sword",
+        "steel_longsword",
+        "flamebrand",
+        "frostbite",
+        "void_edge",
+        "tempered_katana",
+        "bloodfang",
+        "iron_greatsword",
+        "dawnbreaker",
+        "bandit_dirk",
+        "poison_fang",
+        "shadowstep",
+        "hand_axe",
+        "battle_axe",
+        "skullsplitter",
+        "executioner",
+        "worldcleaver",
+        "oak_club",
+        "spiked_club",
+        "iron_mace",
+        "morningstar",
+        "war_hammer",
+        "thunder_maul",
+        "hunting_spear",
+        "halberd",
+        "tidecaller",
+        "reaper_scythe",
+        "soul_harvester",
+        "apprentice_staff",
+        "arcane_staff",
+        "lich_staff",
+        "oak_wand",
+        "ember_wand",
+        "grimoire",
+        "codex_of_light",
+        "void_orb",
+        "short_bow",
+        "elven_longbow",
+        "hand_crossbow",
+        "siege_crossbow",
+        "iron_claws",
+        "dragon_talons",
+        "serpent_whip",
+        "everburning_torch",
+        "wooden_shield",
+        "tower_shield"
+      ]
+    },
+    "dungeon": {
+      "path": "dungeon.png",
+      "cols": 11,
+      "rows": 4,
+      "cell_w": 16,
+      "cell_h": 16,
+      "count": 43,
+      "order": [
+        "floor_stone",
+        "floor_cracked",
+        "floor_mossy",
+        "floor_wood",
+        "floor_sand",
+        "floor_dirt",
+        "floor_blood",
+        "floor_water",
+        "floor_lava",
+        "wall_stone",
+        "wall_stone_top",
+        "wall_cracked",
+        "wall_mossy",
+        "wall_brick",
+        "wall_rune",
+        "door_closed",
+        "door_open",
+        "portcullis",
+        "stairs_down",
+        "stairs_up",
+        "pillar",
+        "arch",
+        "pit",
+        "chest_closed",
+        "chest_open",
+        "barrel",
+        "crate",
+        "urn",
+        "torch_wall",
+        "brazier",
+        "bones",
+        "skull_pile",
+        "cobweb",
+        "spike_trap",
+        "pressure_plate",
+        "altar",
+        "rubble",
+        "banner",
+        "chain",
+        "mushrooms",
+        "key_item",
+        "coin_pile",
+        "potion"
+      ]
+    },
+    "fx": {
+      "path": "fx.png",
+      "cols": 6,
+      "rows": 16,
+      "cell_w": 32,
+      "cell_h": 32,
+      "count": 96,
+      "order": [
+        "fx_slash:0",
+        "fx_slash:1",
+        "fx_slash:2",
+        "fx_slash:3",
+        "fx_slash:4",
+        "fx_slash:5",
+        "fx_impact:0",
+        "fx_impact:1",
+        "fx_impact:2",
+        "fx_impact:3",
+        "fx_impact:4",
+        "fx_impact:5",
+        "fx_pierce:0",
+        "fx_pierce:1",
+        "fx_pierce:2",
+        "fx_pierce:3",
+        "fx_pierce:4",
+        "fx_pierce:5",
+        "fx_blood:0",
+        "fx_blood:1",
+        "fx_blood:2",
+        "fx_blood:3",
+        "fx_blood:4",
+        "fx_blood:5",
+        "fx_explosion:0",
+        "fx_explosion:1",
+        "fx_explosion:2",
+        "fx_explosion:3",
+        "fx_explosion:4",
+        "fx_explosion:5",
+        "fx_fire:0",
+        "fx_fire:1",
+        "fx_fire:2",
+        "fx_fire:3",
+        "fx_fire:4",
+        "fx_fire:5",
+        "fx_ice:0",
+        "fx_ice:1",
+        "fx_ice:2",
+        "fx_ice:3",
+        "fx_ice:4",
+        "fx_ice:5",
+        "fx_lightning:0",
+        "fx_lightning:1",
+        "fx_lightning:2",
+        "fx_lightning:3",
+        "fx_lightning:4",
+        "fx_lightning:5",
+        "fx_poison:0",
+        "fx_poison:1",
+        "fx_poison:2",
+        "fx_poison:3",
+        "fx_poison:4",
+        "fx_poison:5",
+        "fx_arcane:0",
+        "fx_arcane:1",
+        "fx_arcane:2",
+        "fx_arcane:3",
+        "fx_arcane:4",
+        "fx_arcane:5",
+        "fx_heal:0",
+        "fx_heal:1",
+        "fx_heal:2",
+        "fx_heal:3",
+        "fx_heal:4",
+        "fx_heal:5",
+        "fx_buff:0",
+        "fx_buff:1",
+        "fx_buff:2",
+        "fx_buff:3",
+        "fx_buff:4",
+        "fx_buff:5",
+        "fx_debuff:0",
+        "fx_debuff:1",
+        "fx_debuff:2",
+        "fx_debuff:3",
+        "fx_debuff:4",
+        "fx_debuff:5",
+        "fx_stun:0",
+        "fx_stun:1",
+        "fx_stun:2",
+        "fx_stun:3",
+        "fx_stun:4",
+        "fx_stun:5",
+        "fx_shockwave:0",
+        "fx_shockwave:1",
+        "fx_shockwave:2",
+        "fx_shockwave:3",
+        "fx_shockwave:4",
+        "fx_shockwave:5",
+        "fx_smoke:0",
+        "fx_smoke:1",
+        "fx_smoke:2",
+        "fx_smoke:3",
+        "fx_smoke:4",
+        "fx_smoke:5"
+      ]
+    }
+  },
+  "totals": {
+    "heroes": 10,
+    "enemies": 29,
+    "weapons": 47,
+    "dungeon": 43,
+    "fx": 16,
+    "character_frames": 975,
+    "fx_frames": 96
+  }
+}

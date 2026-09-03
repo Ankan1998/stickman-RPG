@@ -1,0 +1,2793 @@
+{
+  "name": "Stickman RPG Audio Pack",
+  "version": "1.0.0",
+  "format": {
+    "sample_rate": 44100,
+    "channels": 1,
+    "wav": "16-bit PCM",
+    "ogg": "Vorbis q5 (~160 kbps)"
+  },
+  "variants": 3,
+  "sounds": [
+    {
+      "name": "slash_light",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Dagger, sword, katana.",
+      "variants": [
+        {
+          "wav": "combat/slash_light_1.wav",
+          "ogg": "combat/slash_light_1.ogg",
+          "peak": 0.89,
+          "rms_db": -25.3,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.011,
+          "max_jump": 0.029,
+          "dur": 0.397
+        },
+        {
+          "wav": "combat/slash_light_2.wav",
+          "ogg": "combat/slash_light_2.ogg",
+          "peak": 0.89,
+          "rms_db": -22.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.005,
+          "max_jump": 0.041,
+          "dur": 0.399
+        },
+        {
+          "wav": "combat/slash_light_3.wav",
+          "ogg": "combat/slash_light_3.ogg",
+          "peak": 0.89,
+          "rms_db": -21.3,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.043,
+          "dur": 0.437
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "slash_heavy",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Greatsword, axe, scythe.",
+      "variants": [
+        {
+          "wav": "combat/slash_heavy_1.wav",
+          "ogg": "combat/slash_heavy_1.ogg",
+          "peak": 0.89,
+          "rms_db": -24.3,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.012,
+          "max_jump": 0.029,
+          "dur": 0.494
+        },
+        {
+          "wav": "combat/slash_heavy_2.wav",
+          "ogg": "combat/slash_heavy_2.ogg",
+          "peak": 0.89,
+          "rms_db": -20.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.011,
+          "max_jump": 0.031,
+          "dur": 0.486
+        },
+        {
+          "wav": "combat/slash_heavy_3.wav",
+          "ogg": "combat/slash_heavy_3.ogg",
+          "peak": 0.89,
+          "rms_db": -21.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.01,
+          "max_jump": 0.031,
+          "dur": 0.564
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "blunt_hit",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Mace, club, fist.",
+      "variants": [
+        {
+          "wav": "combat/blunt_hit_1.wav",
+          "ogg": "combat/blunt_hit_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.1,
+          "dc": -0.0008,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.013,
+          "dur": 0.274
+        },
+        {
+          "wav": "combat/blunt_hit_2.wav",
+          "ogg": "combat/blunt_hit_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.9,
+          "dc": -0.001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.008,
+          "dur": 0.279
+        },
+        {
+          "wav": "combat/blunt_hit_3.wav",
+          "ogg": "combat/blunt_hit_3.ogg",
+          "peak": 0.89,
+          "rms_db": -18.9,
+          "dc": -0.0007,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.012,
+          "dur": 0.305
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "blunt_heavy",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Hammer, maul, ogre club.",
+      "variants": [
+        {
+          "wav": "combat/blunt_heavy_1.wav",
+          "ogg": "combat/blunt_heavy_1.ogg",
+          "peak": 0.89,
+          "rms_db": -16.4,
+          "dc": 0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.005,
+          "dur": 0.416
+        },
+        {
+          "wav": "combat/blunt_heavy_2.wav",
+          "ogg": "combat/blunt_heavy_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.2,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.012,
+          "dur": 0.417
+        },
+        {
+          "wav": "combat/blunt_heavy_3.wav",
+          "ogg": "combat/blunt_heavy_3.ogg",
+          "peak": 0.89,
+          "rms_db": -13.6,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.007,
+          "dur": 0.442
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "pierce",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Arrow, bolt, spear, trident landing.",
+      "variants": [
+        {
+          "wav": "combat/pierce_1.wav",
+          "ogg": "combat/pierce_1.ogg",
+          "peak": 0.89,
+          "rms_db": -21.5,
+          "dc": -0.0014,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.044,
+          "dur": 0.241
+        },
+        {
+          "wav": "combat/pierce_2.wav",
+          "ogg": "combat/pierce_2.ogg",
+          "peak": 0.89,
+          "rms_db": -23.2,
+          "dc": -0.0008,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.054,
+          "dur": 0.264
+        },
+        {
+          "wav": "combat/pierce_3.wav",
+          "ogg": "combat/pierce_3.ogg",
+          "peak": 0.89,
+          "rms_db": -22.2,
+          "dc": -0.0013,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.042,
+          "dur": 0.228
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "hit_flesh",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Impact on an organic target.",
+      "variants": [
+        {
+          "wav": "combat/hit_flesh_1.wav",
+          "ogg": "combat/hit_flesh_1.ogg",
+          "peak": 0.89,
+          "rms_db": -20.8,
+          "dc": -0.0009,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.019,
+          "dur": 0.286
+        },
+        {
+          "wav": "combat/hit_flesh_2.wav",
+          "ogg": "combat/hit_flesh_2.ogg",
+          "peak": 0.89,
+          "rms_db": -19.4,
+          "dc": -0.0009,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.018,
+          "dur": 0.278
+        },
+        {
+          "wav": "combat/hit_flesh_3.wav",
+          "ogg": "combat/hit_flesh_3.ogg",
+          "peak": 0.89,
+          "rms_db": -20.4,
+          "dc": -0.0008,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.011,
+          "dur": 0.3
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "hit_bone",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Impact on a skeleton.",
+      "variants": [
+        {
+          "wav": "combat/hit_bone_1.wav",
+          "ogg": "combat/hit_bone_1.ogg",
+          "peak": 0.89,
+          "rms_db": -24.3,
+          "dc": -0.0007,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.051,
+          "dur": 0.243
+        },
+        {
+          "wav": "combat/hit_bone_2.wav",
+          "ogg": "combat/hit_bone_2.ogg",
+          "peak": 0.89,
+          "rms_db": -23.7,
+          "dc": -0.0008,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.048,
+          "dur": 0.228
+        },
+        {
+          "wav": "combat/hit_bone_3.wav",
+          "ogg": "combat/hit_bone_3.ogg",
+          "peak": 0.89,
+          "rms_db": -24.2,
+          "dc": -0.0006,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.035,
+          "dur": 0.274
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "hit_armor",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Impact on plate or a golem.",
+      "variants": [
+        {
+          "wav": "combat/hit_armor_1.wav",
+          "ogg": "combat/hit_armor_1.ogg",
+          "peak": 0.89,
+          "rms_db": -21.1,
+          "dc": -0.0006,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.022,
+          "dur": 0.28
+        },
+        {
+          "wav": "combat/hit_armor_2.wav",
+          "ogg": "combat/hit_armor_2.ogg",
+          "peak": 0.89,
+          "rms_db": -20.9,
+          "dc": -0.0004,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.028,
+          "dur": 0.288
+        },
+        {
+          "wav": "combat/hit_armor_3.wav",
+          "ogg": "combat/hit_armor_3.ogg",
+          "peak": 0.89,
+          "rms_db": -21.2,
+          "dc": -0.0005,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.017,
+          "dur": 0.308
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "claw_hit",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Beast or monk triple-rake.",
+      "variants": [
+        {
+          "wav": "combat/claw_hit_1.wav",
+          "ogg": "combat/claw_hit_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.004,
+          "max_jump": 0.056,
+          "dur": 0.44
+        },
+        {
+          "wav": "combat/claw_hit_2.wav",
+          "ogg": "combat/claw_hit_2.ogg",
+          "peak": 0.89,
+          "rms_db": -19.0,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.049,
+          "dur": 0.421
+        },
+        {
+          "wav": "combat/claw_hit_3.wav",
+          "ogg": "combat/claw_hit_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.1,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.045,
+          "dur": 0.45
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "bow_release",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "String twang plus arrow flight.",
+      "variants": [
+        {
+          "wav": "combat/bow_release_1.wav",
+          "ogg": "combat/bow_release_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.6,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.106,
+          "dur": 0.505
+        },
+        {
+          "wav": "combat/bow_release_2.wav",
+          "ogg": "combat/bow_release_2.ogg",
+          "peak": 0.89,
+          "rms_db": -19.2,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.064,
+          "dur": 0.476
+        },
+        {
+          "wav": "combat/bow_release_3.wav",
+          "ogg": "combat/bow_release_3.ogg",
+          "peak": 0.89,
+          "rms_db": -19.6,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.078,
+          "dur": 0.505
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "crossbow_release",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Trigger thunk, twang, bolt.",
+      "variants": [
+        {
+          "wav": "combat/crossbow_release_1.wav",
+          "ogg": "combat/crossbow_release_1.ogg",
+          "peak": 0.89,
+          "rms_db": -19.3,
+          "dc": -0.0006,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.084,
+          "dur": 0.424
+        },
+        {
+          "wav": "combat/crossbow_release_2.wav",
+          "ogg": "combat/crossbow_release_2.ogg",
+          "peak": 0.89,
+          "rms_db": -18.7,
+          "dc": -0.0005,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.088,
+          "dur": 0.4
+        },
+        {
+          "wav": "combat/crossbow_release_3.wav",
+          "ogg": "combat/crossbow_release_3.ogg",
+          "peak": 0.89,
+          "rms_db": -20.6,
+          "dc": -0.0004,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.068,
+          "dur": 0.436
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "shield_block",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Wooden shield absorbs a hit.",
+      "variants": [
+        {
+          "wav": "combat/shield_block_1.wav",
+          "ogg": "combat/shield_block_1.ogg",
+          "peak": 0.89,
+          "rms_db": -20.1,
+          "dc": -0.0005,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.02,
+          "dur": 0.291
+        },
+        {
+          "wav": "combat/shield_block_2.wav",
+          "ogg": "combat/shield_block_2.ogg",
+          "peak": 0.89,
+          "rms_db": -22.0,
+          "dc": -0.0009,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.011,
+          "dur": 0.273
+        },
+        {
+          "wav": "combat/shield_block_3.wav",
+          "ogg": "combat/shield_block_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.6,
+          "dc": -0.0006,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.015,
+          "dur": 0.295
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "parry_clang",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Steel on steel.",
+      "variants": [
+        {
+          "wav": "combat/parry_clang_1.wav",
+          "ogg": "combat/parry_clang_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.032,
+          "dur": 0.435
+        },
+        {
+          "wav": "combat/parry_clang_2.wav",
+          "ogg": "combat/parry_clang_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.8,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.04,
+          "dur": 0.406
+        },
+        {
+          "wav": "combat/parry_clang_3.wav",
+          "ogg": "combat/parry_clang_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.037,
+          "dur": 0.408
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "miss_whoosh",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "A swing that finds nothing.",
+      "variants": [
+        {
+          "wav": "combat/miss_whoosh_1.wav",
+          "ogg": "combat/miss_whoosh_1.ogg",
+          "peak": 0.89,
+          "rms_db": -16.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.037,
+          "dur": 0.459
+        },
+        {
+          "wav": "combat/miss_whoosh_2.wav",
+          "ogg": "combat/miss_whoosh_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.3,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.041,
+          "dur": 0.49
+        },
+        {
+          "wav": "combat/miss_whoosh_3.wav",
+          "ogg": "combat/miss_whoosh_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.005,
+          "max_jump": 0.031,
+          "dur": 0.474
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "critical_hit",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Big hit plus a bright sting.",
+      "variants": [
+        {
+          "wav": "combat/critical_hit_1.wav",
+          "ogg": "combat/critical_hit_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.1,
+          "dc": -0.0006,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.047,
+          "dur": 0.352
+        },
+        {
+          "wav": "combat/critical_hit_2.wav",
+          "ogg": "combat/critical_hit_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.7,
+          "dc": -0.0006,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.041,
+          "dur": 0.363
+        },
+        {
+          "wav": "combat/critical_hit_3.wav",
+          "ogg": "combat/critical_hit_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.1,
+          "dc": -0.0008,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.061,
+          "dur": 0.349
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "spell_cast",
+      "category": "combat",
+      "group": "combat",
+      "blurb": "Caster wind-up before any spell.",
+      "variants": [
+        {
+          "wav": "combat/spell_cast_1.wav",
+          "ogg": "combat/spell_cast_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.7,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.046,
+          "dur": 0.63
+        },
+        {
+          "wav": "combat/spell_cast_2.wav",
+          "ogg": "combat/spell_cast_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.1,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.005,
+          "max_jump": 0.028,
+          "dur": 0.61
+        },
+        {
+          "wav": "combat/spell_cast_3.wav",
+          "ogg": "combat/spell_cast_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.7,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.005,
+          "max_jump": 0.024,
+          "dur": 0.652
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "human_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Human takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/human_hurt_1.wav",
+          "ogg": "voices/human_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.5,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.017,
+          "dur": 0.53
+        },
+        {
+          "wav": "voices/human_hurt_2.wav",
+          "ogg": "voices/human_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.2,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.013,
+          "dur": 0.513
+        },
+        {
+          "wav": "voices/human_hurt_3.wav",
+          "ogg": "voices/human_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.3,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.013,
+          "dur": 0.488
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "human",
+      "kind": "hurt"
+    },
+    {
+      "name": "human_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Human dies.",
+      "variants": [
+        {
+          "wav": "voices/human_death_1.wav",
+          "ogg": "voices/human_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.3,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.012,
+          "dur": 1.003
+        },
+        {
+          "wav": "voices/human_death_2.wav",
+          "ogg": "voices/human_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.01,
+          "dur": 0.982
+        },
+        {
+          "wav": "voices/human_death_3.wav",
+          "ogg": "voices/human_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -18.2,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.017,
+          "dur": 1.035
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "human",
+      "kind": "death"
+    },
+    {
+      "name": "goblin_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Goblin takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/goblin_hurt_1.wav",
+          "ogg": "voices/goblin_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.2,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.031,
+          "dur": 0.446
+        },
+        {
+          "wav": "voices/goblin_hurt_2.wav",
+          "ogg": "voices/goblin_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.024,
+          "dur": 0.442
+        },
+        {
+          "wav": "voices/goblin_hurt_3.wav",
+          "ogg": "voices/goblin_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.04,
+          "dur": 0.442
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "goblin",
+      "kind": "hurt"
+    },
+    {
+      "name": "goblin_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Goblin dies.",
+      "variants": [
+        {
+          "wav": "voices/goblin_death_1.wav",
+          "ogg": "voices/goblin_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.9,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.038,
+          "dur": 0.722
+        },
+        {
+          "wav": "voices/goblin_death_2.wav",
+          "ogg": "voices/goblin_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.4,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.041,
+          "dur": 0.821
+        },
+        {
+          "wav": "voices/goblin_death_3.wav",
+          "ogg": "voices/goblin_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -13.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.036,
+          "dur": 0.866
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "goblin",
+      "kind": "death"
+    },
+    {
+      "name": "beast_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Beast takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/beast_hurt_1.wav",
+          "ogg": "voices/beast_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -16.6,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.016,
+          "dur": 0.506
+        },
+        {
+          "wav": "voices/beast_hurt_2.wav",
+          "ogg": "voices/beast_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.8,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.018,
+          "dur": 0.496
+        },
+        {
+          "wav": "voices/beast_hurt_3.wav",
+          "ogg": "voices/beast_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.016,
+          "dur": 0.517
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "beast",
+      "kind": "hurt"
+    },
+    {
+      "name": "beast_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Beast dies.",
+      "variants": [
+        {
+          "wav": "voices/beast_death_1.wav",
+          "ogg": "voices/beast_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.017,
+          "dur": 1.039
+        },
+        {
+          "wav": "voices/beast_death_2.wav",
+          "ogg": "voices/beast_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.7,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.018,
+          "dur": 1.08
+        },
+        {
+          "wav": "voices/beast_death_3.wav",
+          "ogg": "voices/beast_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.0,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.03,
+          "dur": 1.062
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "beast",
+      "kind": "death"
+    },
+    {
+      "name": "skeleton_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Skeleton takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/skeleton_hurt_1.wav",
+          "ogg": "voices/skeleton_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -19.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.034,
+          "dur": 0.51
+        },
+        {
+          "wav": "voices/skeleton_hurt_2.wav",
+          "ogg": "voices/skeleton_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -18.0,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.022,
+          "dur": 0.418
+        },
+        {
+          "wav": "voices/skeleton_hurt_3.wav",
+          "ogg": "voices/skeleton_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -18.4,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.041,
+          "dur": 0.501
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "skeleton",
+      "kind": "hurt"
+    },
+    {
+      "name": "skeleton_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Skeleton dies.",
+      "variants": [
+        {
+          "wav": "voices/skeleton_death_1.wav",
+          "ogg": "voices/skeleton_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -19.0,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.126,
+          "dur": 0.952
+        },
+        {
+          "wav": "voices/skeleton_death_2.wav",
+          "ogg": "voices/skeleton_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.1,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.082,
+          "dur": 0.902
+        },
+        {
+          "wav": "voices/skeleton_death_3.wav",
+          "ogg": "voices/skeleton_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.07,
+          "dur": 0.993
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "skeleton",
+      "kind": "death"
+    },
+    {
+      "name": "slime_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Slime takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/slime_hurt_1.wav",
+          "ogg": "voices/slime_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -20.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.012,
+          "dur": 0.4
+        },
+        {
+          "wav": "voices/slime_hurt_2.wav",
+          "ogg": "voices/slime_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.8,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.016,
+          "dur": 0.369
+        },
+        {
+          "wav": "voices/slime_hurt_3.wav",
+          "ogg": "voices/slime_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -20.4,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.012,
+          "dur": 0.433
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "slime",
+      "kind": "hurt"
+    },
+    {
+      "name": "slime_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Slime dies.",
+      "variants": [
+        {
+          "wav": "voices/slime_death_1.wav",
+          "ogg": "voices/slime_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -21.3,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.012,
+          "dur": 0.902
+        },
+        {
+          "wav": "voices/slime_death_2.wav",
+          "ogg": "voices/slime_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -22.6,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.015,
+          "dur": 0.763
+        },
+        {
+          "wav": "voices/slime_death_3.wav",
+          "ogg": "voices/slime_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -21.0,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.021,
+          "dur": 0.798
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "slime",
+      "kind": "death"
+    },
+    {
+      "name": "undead_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Undead takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/undead_hurt_1.wav",
+          "ogg": "voices/undead_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.6,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.02,
+          "dur": 0.615
+        },
+        {
+          "wav": "voices/undead_hurt_2.wav",
+          "ogg": "voices/undead_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.1,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.012,
+          "dur": 0.668
+        },
+        {
+          "wav": "voices/undead_hurt_3.wav",
+          "ogg": "voices/undead_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.017,
+          "dur": 0.698
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "undead",
+      "kind": "hurt"
+    },
+    {
+      "name": "undead_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Undead dies.",
+      "variants": [
+        {
+          "wav": "voices/undead_death_1.wav",
+          "ogg": "voices/undead_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.032,
+          "dur": 1.434
+        },
+        {
+          "wav": "voices/undead_death_2.wav",
+          "ogg": "voices/undead_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.02,
+          "dur": 1.272
+        },
+        {
+          "wav": "voices/undead_death_3.wav",
+          "ogg": "voices/undead_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.022,
+          "dur": 1.345
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "undead",
+      "kind": "death"
+    },
+    {
+      "name": "demon_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Demon takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/demon_hurt_1.wav",
+          "ogg": "voices/demon_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.3,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.014,
+          "dur": 0.648
+        },
+        {
+          "wav": "voices/demon_hurt_2.wav",
+          "ogg": "voices/demon_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.5,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.022,
+          "dur": 0.592
+        },
+        {
+          "wav": "voices/demon_hurt_3.wav",
+          "ogg": "voices/demon_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.4,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.013,
+          "dur": 0.603
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "demon",
+      "kind": "hurt"
+    },
+    {
+      "name": "demon_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Demon dies.",
+      "variants": [
+        {
+          "wav": "voices/demon_death_1.wav",
+          "ogg": "voices/demon_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.0,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.016,
+          "dur": 1.692
+        },
+        {
+          "wav": "voices/demon_death_2.wav",
+          "ogg": "voices/demon_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.3,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.009,
+          "dur": 1.367
+        },
+        {
+          "wav": "voices/demon_death_3.wav",
+          "ogg": "voices/demon_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.4,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.014,
+          "dur": 1.625
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "demon",
+      "kind": "death"
+    },
+    {
+      "name": "golem_hurt",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Golem takes a hit.",
+      "variants": [
+        {
+          "wav": "voices/golem_hurt_1.wav",
+          "ogg": "voices/golem_hurt_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.9,
+          "dc": -0.0003,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.039,
+          "dur": 0.437
+        },
+        {
+          "wav": "voices/golem_hurt_2.wav",
+          "ogg": "voices/golem_hurt_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.3,
+          "dc": -0.0004,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.106,
+          "dur": 0.427
+        },
+        {
+          "wav": "voices/golem_hurt_3.wav",
+          "ogg": "voices/golem_hurt_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.9,
+          "dc": -0.0003,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.045,
+          "dur": 0.474
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "golem",
+      "kind": "hurt"
+    },
+    {
+      "name": "golem_death",
+      "category": "voice",
+      "group": "voices",
+      "blurb": "Golem dies.",
+      "variants": [
+        {
+          "wav": "voices/golem_death_1.wav",
+          "ogg": "voices/golem_death_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.0,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.029,
+          "dur": 1.523
+        },
+        {
+          "wav": "voices/golem_death_2.wav",
+          "ogg": "voices/golem_death_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.8,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.017,
+          "dur": 1.33
+        },
+        {
+          "wav": "voices/golem_death_3.wav",
+          "ogg": "voices/golem_death_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.2,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.027,
+          "dur": 1.334
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0,
+      "family": "golem",
+      "kind": "death"
+    },
+    {
+      "name": "fire",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Roar with crackles; pairs with fx_fire.",
+      "variants": [
+        {
+          "wav": "magic/fire_1.wav",
+          "ogg": "magic/fire_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.01,
+          "dur": 0.891
+        },
+        {
+          "wav": "magic/fire_2.wav",
+          "ogg": "magic/fire_2.ogg",
+          "peak": 0.89,
+          "rms_db": -18.2,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.014,
+          "dur": 0.844
+        },
+        {
+          "wav": "magic/fire_3.wav",
+          "ogg": "magic/fire_3.ogg",
+          "peak": 0.89,
+          "rms_db": -18.0,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.004,
+          "max_jump": 0.019,
+          "dur": 0.926
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "ice",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Glassy partials and a shatter; fx_ice.",
+      "variants": [
+        {
+          "wav": "magic/ice_1.wav",
+          "ogg": "magic/ice_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.4,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.108,
+          "dur": 0.713
+        },
+        {
+          "wav": "magic/ice_2.wav",
+          "ogg": "magic/ice_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.2,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.087,
+          "dur": 0.68
+        },
+        {
+          "wav": "magic/ice_3.wav",
+          "ogg": "magic/ice_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.089,
+          "dur": 0.746
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "lightning",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Crack, zap, rumble; fx_lightning.",
+      "variants": [
+        {
+          "wav": "magic/lightning_1.wav",
+          "ogg": "magic/lightning_1.ogg",
+          "peak": 0.89,
+          "rms_db": -16.7,
+          "dc": 0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.043,
+          "dur": 0.992
+        },
+        {
+          "wav": "magic/lightning_2.wav",
+          "ogg": "magic/lightning_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.034,
+          "dur": 0.971
+        },
+        {
+          "wav": "magic/lightning_3.wav",
+          "ogg": "magic/lightning_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.6,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.088,
+          "dur": 1.088
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "poison",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Hiss with bubbles; fx_poison.",
+      "variants": [
+        {
+          "wav": "magic/poison_1.wav",
+          "ogg": "magic/poison_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.4,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.033,
+          "dur": 0.983
+        },
+        {
+          "wav": "magic/poison_2.wav",
+          "ogg": "magic/poison_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.008,
+          "max_jump": 0.03,
+          "dur": 0.862
+        },
+        {
+          "wav": "magic/poison_3.wav",
+          "ogg": "magic/poison_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.0,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.024,
+          "dur": 0.99
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "heal",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Rising pentatonic shimmer; fx_heal.",
+      "variants": [
+        {
+          "wav": "magic/heal_1.wav",
+          "ogg": "magic/heal_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.1,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.039,
+          "dur": 0.962
+        },
+        {
+          "wav": "magic/heal_2.wav",
+          "ogg": "magic/heal_2.ogg",
+          "peak": 0.89,
+          "rms_db": -13.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.033,
+          "dur": 0.92
+        },
+        {
+          "wav": "magic/heal_3.wav",
+          "ogg": "magic/heal_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.023,
+          "dur": 1.0
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "arcane",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "FM swell into a chord; fx_arcane.",
+      "variants": [
+        {
+          "wav": "magic/arcane_1.wav",
+          "ogg": "magic/arcane_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.036,
+          "dur": 0.902
+        },
+        {
+          "wav": "magic/arcane_2.wav",
+          "ogg": "magic/arcane_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.006,
+          "max_jump": 0.027,
+          "dur": 0.861
+        },
+        {
+          "wav": "magic/arcane_3.wav",
+          "ogg": "magic/arcane_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.4,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.011,
+          "max_jump": 0.025,
+          "dur": 0.932
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "buff",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Rising sweep with a chime; fx_buff.",
+      "variants": [
+        {
+          "wav": "magic/buff_1.wav",
+          "ogg": "magic/buff_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.6,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.003,
+          "max_jump": 0.023,
+          "dur": 0.847
+        },
+        {
+          "wav": "magic/buff_2.wav",
+          "ogg": "magic/buff_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.003,
+          "max_jump": 0.019,
+          "dur": 0.849
+        },
+        {
+          "wav": "magic/buff_3.wav",
+          "ogg": "magic/buff_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.1,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.004,
+          "max_jump": 0.021,
+          "dur": 0.881
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "debuff",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Detuned fall; fx_debuff.",
+      "variants": [
+        {
+          "wav": "magic/debuff_1.wav",
+          "ogg": "magic/debuff_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.2,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.022,
+          "dur": 0.753
+        },
+        {
+          "wav": "magic/debuff_2.wav",
+          "ogg": "magic/debuff_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.4,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.024,
+          "dur": 0.752
+        },
+        {
+          "wav": "magic/debuff_3.wav",
+          "ogg": "magic/debuff_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.024,
+          "dur": 0.823
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "stun",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Wobbly circling bells; fx_stun.",
+      "variants": [
+        {
+          "wav": "magic/stun_1.wav",
+          "ogg": "magic/stun_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.028,
+          "dur": 0.872
+        },
+        {
+          "wav": "magic/stun_2.wav",
+          "ogg": "magic/stun_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.4,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.027,
+          "dur": 0.86
+        },
+        {
+          "wav": "magic/stun_3.wav",
+          "ogg": "magic/stun_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.3,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.025,
+          "dur": 0.885
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "explosion",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Boom, sub, debris; fx_explosion.",
+      "variants": [
+        {
+          "wav": "magic/explosion_1.wav",
+          "ogg": "magic/explosion_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.6,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.249,
+          "dur": 0.931
+        },
+        {
+          "wav": "magic/explosion_2.wav",
+          "ogg": "magic/explosion_2.ogg",
+          "peak": 0.89,
+          "rms_db": -20.9,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.162,
+          "dur": 0.823
+        },
+        {
+          "wav": "magic/explosion_3.wav",
+          "ogg": "magic/explosion_3.ogg",
+          "peak": 0.89,
+          "rms_db": -19.2,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.223,
+          "dur": 1.035
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "shockwave",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Sub sweep and gravel; fx_shockwave.",
+      "variants": [
+        {
+          "wav": "magic/shockwave_1.wav",
+          "ogg": "magic/shockwave_1.ogg",
+          "peak": 0.89,
+          "rms_db": -12.4,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.005,
+          "dur": 0.849
+        },
+        {
+          "wav": "magic/shockwave_2.wav",
+          "ogg": "magic/shockwave_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.3,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.002,
+          "dur": 0.843
+        },
+        {
+          "wav": "magic/shockwave_3.wav",
+          "ogg": "magic/shockwave_3.ogg",
+          "peak": 0.89,
+          "rms_db": -13.3,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.02,
+          "dur": 0.929
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "smoke",
+      "category": "magic",
+      "group": "magic",
+      "blurb": "Soft airy puff; fx_smoke.",
+      "variants": [
+        {
+          "wav": "magic/smoke_1.wav",
+          "ogg": "magic/smoke_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.003,
+          "max_jump": 0.016,
+          "dur": 0.696
+        },
+        {
+          "wav": "magic/smoke_2.wav",
+          "ogg": "magic/smoke_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.4,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.003,
+          "max_jump": 0.012,
+          "dur": 0.732
+        },
+        {
+          "wav": "magic/smoke_3.wav",
+          "ogg": "magic/smoke_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.002,
+          "max_jump": 0.01,
+          "dur": 0.663
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "ui_move",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Cursor moves.",
+      "variants": [
+        {
+          "wav": "ui/ui_move_1.wav",
+          "ogg": "ui/ui_move_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.8,
+          "dc": 0.0004,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.007,
+          "dur": 0.045
+        },
+        {
+          "wav": "ui/ui_move_2.wav",
+          "ogg": "ui/ui_move_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.7,
+          "dc": 0.0004,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.008,
+          "dur": 0.044
+        },
+        {
+          "wav": "ui/ui_move_3.wav",
+          "ogg": "ui/ui_move_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.7,
+          "dc": 0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.007,
+          "dur": 0.046
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "ui_select",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Confirm.",
+      "variants": [
+        {
+          "wav": "ui/ui_select_1.wav",
+          "ogg": "ui/ui_select_1.ogg",
+          "peak": 0.89,
+          "rms_db": -13.7,
+          "dc": 0.0013,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.165,
+          "dur": 0.14
+        },
+        {
+          "wav": "ui/ui_select_2.wav",
+          "ogg": "ui/ui_select_2.ogg",
+          "peak": 0.89,
+          "rms_db": -13.8,
+          "dc": 0.0013,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.158,
+          "dur": 0.138
+        },
+        {
+          "wav": "ui/ui_select_3.wav",
+          "ogg": "ui/ui_select_3.ogg",
+          "peak": 0.89,
+          "rms_db": -13.8,
+          "dc": 0.0013,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.143,
+          "dur": 0.142
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "ui_back",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Cancel / back.",
+      "variants": [
+        {
+          "wav": "ui/ui_back_1.wav",
+          "ogg": "ui/ui_back_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.1,
+          "dc": 0.0012,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.139,
+          "dur": 0.14
+        },
+        {
+          "wav": "ui/ui_back_2.wav",
+          "ogg": "ui/ui_back_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.2,
+          "dc": 0.0012,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.141,
+          "dur": 0.138
+        },
+        {
+          "wav": "ui/ui_back_3.wav",
+          "ogg": "ui/ui_back_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.2,
+          "dc": 0.0012,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.113,
+          "dur": 0.142
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "ui_error",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Invalid action.",
+      "variants": [
+        {
+          "wav": "ui/ui_error_1.wav",
+          "ogg": "ui/ui_error_1.ogg",
+          "peak": 0.89,
+          "rms_db": -10.5,
+          "dc": -0.0015,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.491,
+          "dur": 0.18
+        },
+        {
+          "wav": "ui/ui_error_2.wav",
+          "ogg": "ui/ui_error_2.ogg",
+          "peak": 0.89,
+          "rms_db": -10.5,
+          "dc": -0.0015,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.299,
+          "dur": 0.178
+        },
+        {
+          "wav": "ui/ui_error_3.wav",
+          "ogg": "ui/ui_error_3.ogg",
+          "peak": 0.89,
+          "rms_db": -10.5,
+          "dc": -0.0015,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.396,
+          "dur": 0.183
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "turn_start",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Player's turn begins.",
+      "variants": [
+        {
+          "wav": "ui/turn_start_1.wav",
+          "ogg": "ui/turn_start_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.018,
+          "dur": 0.357
+        },
+        {
+          "wav": "ui/turn_start_2.wav",
+          "ogg": "ui/turn_start_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.0,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.011,
+          "dur": 0.384
+        },
+        {
+          "wav": "ui/turn_start_3.wav",
+          "ogg": "ui/turn_start_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.8,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.017,
+          "dur": 0.347
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "level_up",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Rising fanfare.",
+      "variants": [
+        {
+          "wav": "ui/level_up_1.wav",
+          "ogg": "ui/level_up_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.3,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.057,
+          "dur": 0.934
+        },
+        {
+          "wav": "ui/level_up_2.wav",
+          "ogg": "ui/level_up_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.062,
+          "dur": 0.905
+        },
+        {
+          "wav": "ui/level_up_3.wav",
+          "ogg": "ui/level_up_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.6,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.05,
+          "dur": 0.966
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "victory",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Battle won.",
+      "variants": [
+        {
+          "wav": "ui/victory_1.wav",
+          "ogg": "ui/victory_1.ogg",
+          "peak": 0.89,
+          "rms_db": -19.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.103,
+          "dur": 1.082
+        },
+        {
+          "wav": "ui/victory_2.wav",
+          "ogg": "ui/victory_2.ogg",
+          "peak": 0.89,
+          "rms_db": -17.5,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.074,
+          "dur": 1.052
+        },
+        {
+          "wav": "ui/victory_3.wav",
+          "ogg": "ui/victory_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.055,
+          "dur": 1.127
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "defeat",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Party wiped.",
+      "variants": [
+        {
+          "wav": "ui/defeat_1.wav",
+          "ogg": "ui/defeat_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.5,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.1,
+          "dur": 2.011
+        },
+        {
+          "wav": "ui/defeat_2.wav",
+          "ogg": "ui/defeat_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.2,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.004,
+          "dur": 1.97
+        },
+        {
+          "wav": "ui/defeat_3.wav",
+          "ogg": "ui/defeat_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.9,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.093,
+          "dur": 2.094
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "chest_open",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Latch, creak, sparkle.",
+      "variants": [
+        {
+          "wav": "ui/chest_open_1.wav",
+          "ogg": "ui/chest_open_1.ogg",
+          "peak": 0.89,
+          "rms_db": -15.6,
+          "dc": -0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.082,
+          "dur": 0.771
+        },
+        {
+          "wav": "ui/chest_open_2.wav",
+          "ogg": "ui/chest_open_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.8,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.069,
+          "dur": 0.75
+        },
+        {
+          "wav": "ui/chest_open_3.wav",
+          "ogg": "ui/chest_open_3.ogg",
+          "peak": 0.89,
+          "rms_db": -13.5,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.102,
+          "dur": 0.759
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "door_open",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Heavy wooden creak.",
+      "variants": [
+        {
+          "wav": "ui/door_open_1.wav",
+          "ogg": "ui/door_open_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.2,
+          "dc": 0.0002,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.171,
+          "dur": 0.844
+        },
+        {
+          "wav": "ui/door_open_2.wav",
+          "ogg": "ui/door_open_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.9,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.105,
+          "dur": 0.818
+        },
+        {
+          "wav": "ui/door_open_3.wav",
+          "ogg": "ui/door_open_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.9,
+          "dc": 0.0001,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.117,
+          "dur": 0.895
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "door_close",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Slam.",
+      "variants": [
+        {
+          "wav": "ui/door_close_1.wav",
+          "ogg": "ui/door_close_1.ogg",
+          "peak": 0.89,
+          "rms_db": -16.1,
+          "dc": -0.0004,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.023,
+          "dur": 0.37
+        },
+        {
+          "wav": "ui/door_close_2.wav",
+          "ogg": "ui/door_close_2.ogg",
+          "peak": 0.89,
+          "rms_db": -15.5,
+          "dc": -0.0005,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.022,
+          "dur": 0.344
+        },
+        {
+          "wav": "ui/door_close_3.wav",
+          "ogg": "ui/door_close_3.ogg",
+          "peak": 0.89,
+          "rms_db": -16.3,
+          "dc": -0.0005,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.018,
+          "dur": 0.384
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "coins",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Handful of coins.",
+      "variants": [
+        {
+          "wav": "ui/coins_1.wav",
+          "ogg": "ui/coins_1.ogg",
+          "peak": 0.89,
+          "rms_db": -19.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.053,
+          "dur": 0.509
+        },
+        {
+          "wav": "ui/coins_2.wav",
+          "ogg": "ui/coins_2.ogg",
+          "peak": 0.89,
+          "rms_db": -21.7,
+          "dc": 0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.075,
+          "dur": 0.524
+        },
+        {
+          "wav": "ui/coins_3.wav",
+          "ogg": "ui/coins_3.ogg",
+          "peak": 0.89,
+          "rms_db": -17.8,
+          "dc": -0.0,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.051,
+          "dur": 0.469
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "potion",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Glug, gulp, sparkle.",
+      "variants": [
+        {
+          "wav": "ui/potion_1.wav",
+          "ogg": "ui/potion_1.ogg",
+          "peak": 0.89,
+          "rms_db": -14.6,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.039,
+          "dur": 0.868
+        },
+        {
+          "wav": "ui/potion_2.wav",
+          "ogg": "ui/potion_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.8,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.043,
+          "dur": 0.83
+        },
+        {
+          "wav": "ui/potion_3.wav",
+          "ogg": "ui/potion_3.ogg",
+          "peak": 0.89,
+          "rms_db": -15.1,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.038,
+          "dur": 0.904
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "footstep_stone",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "One step on flagstones.",
+      "variants": [
+        {
+          "wav": "ui/footstep_stone_1.wav",
+          "ogg": "ui/footstep_stone_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.2,
+          "dc": -0.0009,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.012,
+          "dur": 0.278
+        },
+        {
+          "wav": "ui/footstep_stone_2.wav",
+          "ogg": "ui/footstep_stone_2.ogg",
+          "peak": 0.89,
+          "rms_db": -19.3,
+          "dc": -0.0011,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.014,
+          "dur": 0.273
+        },
+        {
+          "wav": "ui/footstep_stone_3.wav",
+          "ogg": "ui/footstep_stone_3.ogg",
+          "peak": 0.89,
+          "rms_db": -18.7,
+          "dc": -0.0008,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.014,
+          "dur": 0.297
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "trap_trigger",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Plate, spring, spikes.",
+      "variants": [
+        {
+          "wav": "ui/trap_trigger_1.wav",
+          "ogg": "ui/trap_trigger_1.ogg",
+          "peak": 0.89,
+          "rms_db": -21.4,
+          "dc": -0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.084,
+          "dur": 0.434
+        },
+        {
+          "wav": "ui/trap_trigger_2.wav",
+          "ogg": "ui/trap_trigger_2.ogg",
+          "peak": 0.89,
+          "rms_db": -20.1,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.076,
+          "dur": 0.415
+        },
+        {
+          "wav": "ui/trap_trigger_3.wav",
+          "ogg": "ui/trap_trigger_3.ogg",
+          "peak": 0.89,
+          "rms_db": -20.0,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.054,
+          "dur": 0.47
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "stairs",
+      "category": "dungeon",
+      "group": "ui",
+      "blurb": "Descending to the next floor.",
+      "variants": [
+        {
+          "wav": "ui/stairs_1.wav",
+          "ogg": "ui/stairs_1.ogg",
+          "peak": 0.89,
+          "rms_db": -17.7,
+          "dc": -0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.024,
+          "dur": 1.048
+        },
+        {
+          "wav": "ui/stairs_2.wav",
+          "ogg": "ui/stairs_2.ogg",
+          "peak": 0.89,
+          "rms_db": -16.5,
+          "dc": -0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.038,
+          "dur": 1.03
+        },
+        {
+          "wav": "ui/stairs_3.wav",
+          "ogg": "ui/stairs_3.ogg",
+          "peak": 0.89,
+          "rms_db": -18.3,
+          "dc": -0.0002,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.025,
+          "dur": 1.096
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "item_pickup",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Picked something up.",
+      "variants": [
+        {
+          "wav": "ui/item_pickup_1.wav",
+          "ogg": "ui/item_pickup_1.ogg",
+          "peak": 0.89,
+          "rms_db": -13.9,
+          "dc": 0.0012,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.161,
+          "dur": 0.16
+        },
+        {
+          "wav": "ui/item_pickup_2.wav",
+          "ogg": "ui/item_pickup_2.ogg",
+          "peak": 0.89,
+          "rms_db": -14.2,
+          "dc": 0.0012,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.142,
+          "dur": 0.156
+        },
+        {
+          "wav": "ui/item_pickup_3.wav",
+          "ogg": "ui/item_pickup_3.ogg",
+          "peak": 0.89,
+          "rms_db": -14.1,
+          "dc": 0.0011,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.144,
+          "dur": 0.167
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    },
+    {
+      "name": "gold_pickup",
+      "category": "ui",
+      "group": "ui",
+      "blurb": "Picked up gold.",
+      "variants": [
+        {
+          "wav": "ui/gold_pickup_1.wav",
+          "ogg": "ui/gold_pickup_1.ogg",
+          "peak": 0.89,
+          "rms_db": -18.6,
+          "dc": 0.0003,
+          "clipped": 0,
+          "lead_silence": 0.001,
+          "max_jump": 0.137,
+          "dur": 0.38
+        },
+        {
+          "wav": "ui/gold_pickup_2.wav",
+          "ogg": "ui/gold_pickup_2.ogg",
+          "peak": 0.89,
+          "rms_db": -18.7,
+          "dc": 0.0003,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.105,
+          "dur": 0.501
+        },
+        {
+          "wav": "ui/gold_pickup_3.wav",
+          "ogg": "ui/gold_pickup_3.ogg",
+          "peak": 0.89,
+          "rms_db": -19.1,
+          "dc": 0.0002,
+          "clipped": 0,
+          "lead_silence": 0.0,
+          "max_jump": 0.096,
+          "dur": 0.559
+        }
+      ],
+      "loop": false,
+      "suggested_volume_db": 0
+    }
+  ],
+  "categories": {
+    "combat": [
+      "slash_light",
+      "slash_heavy",
+      "blunt_hit",
+      "blunt_heavy",
+      "pierce",
+      "hit_flesh",
+      "hit_bone",
+      "hit_armor",
+      "claw_hit",
+      "bow_release",
+      "crossbow_release",
+      "shield_block",
+      "parry_clang",
+      "miss_whoosh",
+      "critical_hit",
+      "spell_cast"
+    ],
+    "voice": [
+      "human_hurt",
+      "human_death",
+      "goblin_hurt",
+      "goblin_death",
+      "beast_hurt",
+      "beast_death",
+      "skeleton_hurt",
+      "skeleton_death",
+      "slime_hurt",
+      "slime_death",
+      "undead_hurt",
+      "undead_death",
+      "demon_hurt",
+      "demon_death",
+      "golem_hurt",
+      "golem_death"
+    ],
+    "magic": [
+      "fire",
+      "ice",
+      "lightning",
+      "poison",
+      "heal",
+      "arcane",
+      "buff",
+      "debuff",
+      "stun",
+      "explosion",
+      "shockwave",
+      "smoke"
+    ],
+    "ui": [
+      "ui_move",
+      "ui_select",
+      "ui_back",
+      "ui_error",
+      "turn_start",
+      "level_up",
+      "victory",
+      "defeat",
+      "item_pickup",
+      "gold_pickup"
+    ],
+    "dungeon": [
+      "chest_open",
+      "door_open",
+      "door_close",
+      "coins",
+      "potion",
+      "footstep_stone",
+      "trap_trigger",
+      "stairs"
+    ]
+  },
+  "totals": {
+    "sounds": 62,
+    "files_per_format": 186,
+    "wav_bytes": 10682594,
+    "ogg_bytes": 1975586,
+    "render_seconds": 3.3,
+    "encode_seconds": 4.6
+  }
+}

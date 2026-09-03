@@ -1,0 +1,105 @@
+site_name: Game Development, From Zero
+site_description: >-
+  A seventeen-chapter course teaching game development from nothing, worked
+  through a complete turn-based tactical RPG built in Godot 4 and C#.
+site_author: Ankan
+site_url: https://ankan1998.github.io/stickman-RPG/
+
+repo_url: https://github.com/Ankan1998/stickman-RPG
+repo_name: Ankan1998/stickman-RPG
+edit_uri: ""
+
+# NOTE: the source markdown lives in docs/ and is STAGED into site-docs/ by
+# scripts/build_docs.py, which rewrites every link for the new layout and turns
+# source-code links into GitHub URLs. site-docs/ is generated - never edit it.
+docs_dir: site-docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tracking         # URL follows the scrolled heading
+    - navigation.top              # back-to-top button
+    - navigation.indexes          # section landing pages
+    - navigation.footer           # prev/next links at the page foot
+    - navigation.sections
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search:
+      separator: '[\s\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - awesome-pages
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+      toc_depth: 3
+      # These docs are written to be read on GitHub first, so their #anchors use
+      # GitHub's slug rules. MkDocs' default slugifier differs on punctuation
+      # ("async--await" vs "async-await"), which would silently break every such
+      # link. pymdownx's slugifier matches GitHub.
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Ankan1998/stickman-RPG
+      name: The project on GitHub
+
+copyright: >-
+  A course in game development, taught through one complete, tested,
+  playable game.

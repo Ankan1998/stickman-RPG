@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Small refinements on top of mkdocs-material.
+   Everything here is cosmetic; the site works fine without it.
+   ========================================================================== */
+
+:root {
+  --md-code-font: "JetBrains Mono", "Cascadia Code", ui-monospace, monospace;
+}
+
+/* The course leans on ASCII diagrams inside fenced blocks. Keep them tight
+   and stop them wrapping, which would scramble the alignment. */
+.md-typeset pre > code {
+  line-height: 1.45;
+}
+
+/* Tables carry a lot of this course's content (trade-off tables, stat tables,
+   measurement results). Give them room and make the header pull its weight. */
+.md-typeset table:not([class]) th {
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.76rem;
+}
+
+/* Blockquotes are used throughout for "the lesson" callouts. Make them read as
+   a pulled-out aside rather than as quoted text. */
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color);
+}
+
+/* The "Where you are: chapter N of 17" breadcrumb is the first blockquote on
+   every chapter - shrink it so it reads as navigation, not content. */
+.md-typeset h1 + blockquote {
+  border-left-color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.75rem;
+}
+
+/* Wide code blocks scroll rather than forcing the page to. */
+.md-typeset pre {
+  overflow-x: auto;
+}
